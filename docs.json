@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
   "name": "Cobalt",
-  "description": "AI-first ATS & CRM for staffing firms and recruitment agencies. Documentation for recruiters and business managers.",
+  "description": "CRM & ATS augmenté par l'IA pour ESN et cabinets de recrutement.",
   "colors": {
     "primary": "#8c8c84",
     "light": "#1d1d15",
@@ -23,95 +23,264 @@
     "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "house",
-          "href": "/"
-        },
-        {
-          "anchor": "Book a Demo",
-          "icon": "calendar",
-          "href": "https://cal.com/gregory-hissiger-2k73tl/cobalt-demo"
-        },
-        {
-          "anchor": "Pricing",
-          "icon": "credit-card",
-          "href": "https://www.cobalt-ia.com/fr/pricing"
-        }
-      ]
-    },
-    "directory": "card",
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "groups": [
+        "language": "fr",
+        "default": true,
+        "tabs": [
           {
-            "group": "Get Started",
-            "icon": "rocket",
-            "expanded": true,
-            "pages": [
-              "introduction",
-              "quickstart",
-              "onboarding/account-setup",
-              "onboarding/invite-team"
+            "tab": "Introduction",
+            "groups": [
+              {
+                "group": "Démarrer",
+                "icon": "rocket",
+                "expanded": true,
+                "pages": [
+                  "fr/introduction",
+                  "fr/quickstart",
+                  "fr/demarrer/configurer-espace",
+                  "fr/demarrer/inviter-equipe",
+                  "fr/demarrer/connecter-outils"
+                ]
+              },
+              {
+                "group": "Sécurité & conformité",
+                "icon": "shield",
+                "pages": [
+                  "fr/securite/securite-rgpd"
+                ]
+              },
+              {
+                "group": "Référence",
+                "icon": "book-open",
+                "pages": [
+                  "fr/reference/faq",
+                  "fr/reference/tutoriels-video",
+                  "fr/reference/support"
+                ]
+              }
             ]
           },
           {
-            "group": "Core Features",
-            "icon": "sparkles",
-            "pages": [
-              "features/ai-agent-balt",
-              "features/semantic-search",
-              "features/enrichment",
-              "features/meeting-transcription",
-              "features/skills-documents",
-              "features/sequences",
-              "features/tasks-pipeline"
+            "tab": "Fonctionnalités",
+            "groups": [
+              {
+                "group": "Sourcing & recherche",
+                "icon": "search",
+                "pages": [
+                  "fr/fonctionnalites/recherche-semantique",
+                  "fr/fonctionnalites/enrichissement"
+                ]
+              },
+              {
+                "group": "Présentation candidat",
+                "icon": "file-text",
+                "pages": [
+                  "fr/fonctionnalites/dossier-competences"
+                ]
+              },
+              {
+                "group": "Communication",
+                "icon": "send",
+                "pages": [
+                  "fr/fonctionnalites/sequences",
+                  "fr/fonctionnalites/telephonie-voip",
+                  "fr/fonctionnalites/transcription"
+                ]
+              },
+              {
+                "group": "CRM & pipeline",
+                "icon": "kanban",
+                "pages": [
+                  "fr/fonctionnalites/pipeline-taches"
+                ]
+              }
             ]
           },
           {
-            "group": "Integrations",
-            "icon": "plug",
-            "pages": [
-              "integrations/boondmanager",
-              "integrations/google-microsoft",
-              "integrations/chrome-extension"
+            "tab": "Cas d'usage",
+            "groups": [
+              {
+                "group": "Cas d'usage",
+                "icon": "briefcase",
+                "pages": [
+                  "fr/cas-usage/staffing-esn",
+                  "fr/cas-usage/intercontrat",
+                  "fr/cas-usage/comptes-clients",
+                  "fr/cas-usage/agence-recrutement"
+                ]
+              }
             ]
           },
           {
-            "group": "Use Cases",
-            "icon": "briefcase",
-            "pages": [
-              "use-cases/esn-staffing",
-              "use-cases/recruitment-agency",
-              "use-cases/intercontrat",
-              "use-cases/account-growth"
+            "tab": "Intégrations",
+            "groups": [
+              {
+                "group": "ERP",
+                "icon": "database",
+                "pages": [
+                  "fr/integrations/boondmanager"
+                ]
+              },
+              {
+                "group": "Email & agenda",
+                "icon": "mail",
+                "pages": [
+                  "fr/integrations/google-workspace",
+                  "fr/integrations/microsoft-365"
+                ]
+              },
+              {
+                "group": "Messagerie & sourcing",
+                "icon": "messages-square",
+                "pages": [
+                  "fr/integrations/linkedin",
+                  "fr/integrations/whatsapp",
+                  "fr/integrations/extension-chrome"
+                ]
+              }
             ]
           },
           {
-            "group": "Plans & Security",
-            "icon": "shield",
-            "pages": [
-              "plans/pricing",
-              "plans/security-compliance"
+            "tab": "Changelog",
+            "groups": [
+              {
+                "group": "Changelog",
+                "icon": "list",
+                "pages": [
+                  "fr/changelog"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Help & FAQ",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "FAQ",
-            "icon": "circle-help",
-            "pages": [
-              "faq/general",
-              "faq/billing",
-              "faq/security-data",
-              "faq/integrations-api",
-              "faq/support"
+            "tab": "Introduction",
+            "groups": [
+              {
+                "group": "Get started",
+                "icon": "rocket",
+                "expanded": true,
+                "pages": [
+                  "en/introduction",
+                  "en/quickstart",
+                  "en/demarrer/configurer-espace",
+                  "en/demarrer/inviter-equipe",
+                  "en/demarrer/connecter-outils"
+                ]
+              },
+              {
+                "group": "Security & compliance",
+                "icon": "shield",
+                "pages": [
+                  "en/securite/securite-rgpd"
+                ]
+              },
+              {
+                "group": "Reference",
+                "icon": "book-open",
+                "pages": [
+                  "en/reference/faq",
+                  "en/reference/tutoriels-video",
+                  "en/reference/support"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Features",
+            "groups": [
+              {
+                "group": "Sourcing & search",
+                "icon": "search",
+                "pages": [
+                  "en/fonctionnalites/recherche-semantique",
+                  "en/fonctionnalites/enrichissement"
+                ]
+              },
+              {
+                "group": "Candidate presentation",
+                "icon": "file-text",
+                "pages": [
+                  "en/fonctionnalites/dossier-competences"
+                ]
+              },
+              {
+                "group": "Communication",
+                "icon": "send",
+                "pages": [
+                  "en/fonctionnalites/sequences",
+                  "en/fonctionnalites/telephonie-voip",
+                  "en/fonctionnalites/transcription"
+                ]
+              },
+              {
+                "group": "CRM & pipeline",
+                "icon": "kanban",
+                "pages": [
+                  "en/fonctionnalites/pipeline-taches"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Use cases",
+            "groups": [
+              {
+                "group": "Use cases",
+                "icon": "briefcase",
+                "pages": [
+                  "en/cas-usage/staffing-esn",
+                  "en/cas-usage/intercontrat",
+                  "en/cas-usage/comptes-clients",
+                  "en/cas-usage/agence-recrutement"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Integrations",
+            "groups": [
+              {
+                "group": "ERP",
+                "icon": "database",
+                "pages": [
+                  "en/integrations/boondmanager"
+                ]
+              },
+              {
+                "group": "Email & calendar",
+                "icon": "mail",
+                "pages": [
+                  "en/integrations/google-workspace",
+                  "en/integrations/microsoft-365"
+                ]
+              },
+              {
+                "group": "Messaging & sourcing",
+                "icon": "messages-square",
+                "pages": [
+                  "en/integrations/linkedin",
+                  "en/integrations/whatsapp",
+                  "en/integrations/extension-chrome"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog",
+            "groups": [
+              {
+                "group": "Changelog",
+                "icon": "list",
+                "pages": [
+                  "en/changelog"
+                ]
+              }
             ]
           }
         ]
@@ -119,13 +288,27 @@
     ]
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "Tarifs",
+        "href": "https://www.cobalt-ia.com/fr/pricing"
+      },
+      {
+        "label": "Support",
+        "href": "mailto:team@cobalt-ia.com"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "Book a Demo",
+      "label": "Demander une démo",
       "href": "https://cal.com/gregory-hissiger-2k73tl/cobalt-demo"
     }
   },
+  "redirects": [
+    { "source": "/", "destination": "/fr/introduction" },
+    { "source": "/introduction", "destination": "/fr/introduction" },
+    { "source": "/quickstart", "destination": "/fr/quickstart" }
+  ],
   "footer": {
     "socials": {
       "linkedin": "https://linkedin.com/company/cobalt-ia"

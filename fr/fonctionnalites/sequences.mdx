@@ -1,0 +1,92 @@
+---
+title: "Séquences multicanal"
+sidebarTitle: "Séquences"
+description: "Automatisez vos campagnes de prospection sur Email, LinkedIn et WhatsApp avec des messages personnalisés par l'IA et une protection anti-spam intégrée."
+---
+
+Les séquences vous permettent de mener des campagnes de prospection coordonnées sur plusieurs canaux, avec un rendu qui semble genuinement personnel. L'IA de Cobalt génère une accroche unique pour chaque candidat à partir de son profil réel, afin que vos messages se distinguent dans des boîtes de réception saturées. Vous pouvez lancer plusieurs séquences simultanément ; la plateforme gère la cadence, la délivrabilité et la mise en pause intelligente automatiquement.
+
+<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID_A_REMPLACER" title="Séquences multicanal dans Cobalt" frameBorder="0" allowFullScreen></iframe>
+
+## Créer une séquence
+
+<Warning>
+  Connectez votre compte LinkedIn et votre email avant de lancer des séquences. Allez dans **Paramètres → Intégrations** pour associer vos comptes.
+</Warning>
+
+<Steps>
+  <Step title="Allez dans Séquences → Nouvelle séquence">
+    Depuis la navigation principale, ouvrez **Séquences** et cliquez sur **Nouvelle séquence** pour ouvrir le constructeur visuel.
+  </Step>
+  <Step title="Nommez votre séquence et choisissez votre audience">
+    Donnez un nom descriptif à votre séquence et sélectionnez votre cible — candidats ou prospects commerciaux — pour que Cobalt applique le bon contexte de personnalisation.
+  </Step>
+  <Step title="Ajoutez des étapes et définissez les délais">
+    Construisez votre flux de prospection en ajoutant des étapes une par une. Choisissez le canal pour chaque étape — **Email**, **InMail LinkedIn**, **message direct LinkedIn** ou **WhatsApp** — puis définissez le délai avant le déclenchement de l'étape suivante (ex. : attendre 3 jours).
+  </Step>
+  <Step title="Rédigez vos messages ou laissez l'IA les personnaliser">
+    Rédigez votre message manuellement avec des variables dynamiques, ou cliquez sur **Générer par IA** pour que Cobalt écrive une accroche unique et contextuelle pour chaque destinataire à partir de son profil, ses expériences et ses compétences réelles — pas seulement son prénom.
+
+    Variables dynamiques disponibles :
+    ```text
+    {{first_name}}   – Prénom du candidat
+    {{job_title}}    – Titre de poste actuel ou le plus récent
+    {{skills}}       – Compétences clés du profil
+    {{location}}     – Ville ou région
+    ```
+  </Step>
+  <Step title="Ajoutez des conditions de branchement">
+    Insérez une logique conditionnelle dans votre séquence pour gérer différents scénarios. Par exemple : *si pas de réponse après 3 jours, envoyer un suivi LinkedIn ; si le candidat clique sur le lien, passer immédiatement à l'étape suivante.* Faites glisser les branches directement sur le canvas visuel.
+  </Step>
+  <Step title="Activez les tests A/B (optionnel)">
+    Répartissez votre audience entre deux variantes de message pour tester des objets, des tonalités ou des appels à l'action. Cobalt suit les taux d'ouverture et de réponse par variante en temps réel pour que vous identifiiez et amplifiiez ce qui fonctionne.
+  </Step>
+  <Step title="Lancez votre séquence">
+    Activez la séquence. Cobalt envoie les messages en votre nom aux intervalles programmés, détecte automatiquement la langue de chaque destinataire depuis son profil, et **met en pause la séquence dès qu'un candidat répond** — personne ne reçoit une relance après avoir déjà engagé la conversation.
+  </Step>
+</Steps>
+
+## Capacités clés
+
+<CardGroup cols={2}>
+  <Card title="Accroches personnalisées par l'IA" icon="sparkles">
+    Cobalt génère une accroche unique et contextuellement pertinente pour chaque destinataire à partir de son profil réel — pas des balises de fusion génériques. Les messages semblent écrits à la main, à grande échelle.
+  </Card>
+  <Card title="Multicanal en un seul flux" icon="arrows-split-up-and-left">
+    Combinez Email, InMail LinkedIn, messages directs LinkedIn et [WhatsApp](/fr/integrations/whatsapp) dans une seule séquence. Touchez les candidats sur les canaux où ils sont les plus réactifs.
+  </Card>
+  <Card title="Protection anti-spam" icon="shield-check">
+    Warm-up d'email intégré, rotation des adresses d'envoi et détection des bounces maintiennent la réputation de votre domaine et gardent vos messages hors des dossiers spam.
+  </Card>
+  <Card title="Mise en pause intelligente à la réponse" icon="circle-pause">
+    La séquence se met en pause automatiquement dès qu'un candidat répond. Aucune relance maladroite ne part après qu'une conversation a déjà commencé.
+  </Card>
+  <Card title="Délégation d'envoi" icon="user-group">
+    Envoyez les messages de séquence depuis la boîte d'un collègue ou d'un manager — utile quand le nom d'un recruteur senior a plus d'impact sur un segment de candidats.
+  </Card>
+  <Card title="Analytique en temps réel" icon="chart-line">
+    Suivez les ouvertures, clics, réponses et bounces par campagne au fur et à mesure. Utilisez les résultats A/B pour affiner continuellement vos messages.
+  </Card>
+</CardGroup>
+
+## Canaux supportés
+
+| Canal | Usage principal |
+|---|---|
+| Email | Prospection principale et relances |
+| [LinkedIn](/fr/integrations/linkedin) InMail | Atteindre les candidats hors de votre réseau |
+| Message direct LinkedIn | Engager les relations de premier degré |
+| [WhatsApp](/fr/integrations/whatsapp) | Suivi conversationnel à haute valeur ajoutée |
+
+## Détection automatique de la langue
+
+Cobalt lit la langue définie sur le profil de chaque candidat et envoie votre message dans cette langue automatiquement. Vous rédigez la séquence une fois ; Cobalt gère la localisation par destinataire.
+
+## Disponibilité par plan
+
+| Plan | Séquences |
+|---|---|
+| Free | Non inclus |
+| Core | Séquences limitées |
+| Copilot | Illimité |
+| Enterprise | Illimité |

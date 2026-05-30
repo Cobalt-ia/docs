@@ -1,0 +1,87 @@
+---
+title: "Enrichissement de profils"
+sidebarTitle: "Enrichissement"
+description: "Complétez automatiquement les fiches candidats avec des emails vérifiés, des numéros directs et des données LinkedIn — sans recherche manuelle."
+---
+
+L'enrichissement Cobalt remplit les coordonnées dont vous avez besoin pour contacter les candidats, sans recherche manuelle. Que vous travailliez sur un profil unique ou sur plusieurs centaines, Cobalt interroge plusieurs sources de données en cascade, vérifie chaque adresse email et écrit les résultats directement sur la fiche du candidat.
+
+<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID_A_REMPLACER" title="Enrichissement de profils dans Cobalt" frameBorder="0" allowFullScreen></iframe>
+
+## Trois façons d'enrichir
+
+<Steps>
+  <Step title="Enrichissement d'un profil unique">
+    Ouvrez la fiche d'un candidat et cliquez sur **Enrichir**. Cobalt récupère l'adresse email vérifiée, le numéro de téléphone direct, l'URL du profil LinkedIn, l'historique d'expériences, les compétences déclarées et la formation — en un clic. Les résultats apparaissent sur la fiche en quelques secondes.
+  </Step>
+  <Step title="Enrichissement en masse">
+    Sélectionnez plusieurs profils depuis n'importe quelle vue liste et cliquez sur **Tout enrichir**. Cobalt traite les profils par batch et met à jour chaque fiche automatiquement. Idéal après l'import d'un lot de CV, le rafraîchissement d'un vivier ou une recherche Balt.
+  </Step>
+  <Step title="Extension Chrome — enrichissez depuis LinkedIn">
+    Installez l'[extension Chrome Cobalt](/fr/integrations/extension-chrome). Depuis n'importe quel profil LinkedIn, cliquez sur l'icône Cobalt pour extraire l'email et le téléphone, ajouter le candidat à une liste Cobalt et synchroniser la fiche dans votre CRM — sans quitter l'onglet LinkedIn.
+  </Step>
+</Steps>
+
+## Méthode cascade et vérification
+
+Cobalt utilise une **méthode en cascade (waterfall)** : il interroge plusieurs fournisseurs de données en séquence et s'arrête dès qu'un résultat valide est trouvé. Cette approche multi-sources maximise la couverture tout en maintenant la fraîcheur des données.
+
+Les adresses email passent par une **double vérification** : contrôle de syntaxe puis contrôle SMTP pour confirmer que la boîte de réception existe et peut recevoir des messages. Seules les adresses qui passent les deux étapes sont écrites sur la fiche.
+
+<Note>
+  La couverture effective dépend du profil et du secteur d'activité. Cobalt ne garantit pas de taux de couverture fixe pour chaque type de profil.
+</Note>
+
+## Système de crédits
+
+L'enrichissement consomme des crédits de votre quota mensuel, partagés entre toute votre équipe.
+
+| Action | Coût en crédits |
+|---|---|
+| 1 enrichissement email | 2 crédits |
+| 1 enrichissement téléphone | 10 crédits |
+
+**Quota mensuel inclus par plan :**
+
+| Plan | Crédits mensuels |
+|---|---|
+| Free | Non inclus |
+| Core | `[À CONFIRMER]` |
+| Copilot | `[À CONFIRMER]` |
+| Enterprise | Illimité |
+
+Des **packs de crédits supplémentaires** sont disponibles à tout moment, sans changement de plan. Consultez la page [Tarifs](https://cobalt.fr/tarifs) pour les détails.
+
+<Info>
+  **Enrichissement historique :** à l'onboarding, vous pouvez demander un enrichissement ponctuel de toute votre base existante en une seule opération. Cobalt traite l'export complet et vous retourne les fiches enrichies. Contactez votre chargé de compte pour l'inclure dans votre plan d'onboarding.
+</Info>
+
+## Conformité RGPD
+
+Toutes les données enrichies proviennent exclusivement de fournisseurs conformes au RGPD et sont hébergées sur infrastructure européenne avec chiffrement de bout en bout. Les candidats peuvent exercer leur droit à l'effacement à tout moment ; Cobalt propage la suppression sur l'ensemble des fiches associées automatiquement.
+
+## Disponibilité par plan
+
+| Plan | Enrichissement |
+|---|---|
+| Free | Non inclus |
+| Core | Inclus (quota mensuel) |
+| Copilot | Inclus (quota mensuel élargi) |
+| Enterprise | Illimité |
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Comment Cobalt trouve-t-il les coordonnées ?">
+    Cobalt interroge plusieurs fournisseurs de données tiers en séquence — le processus s'arrête dès qu'un résultat valide et vérifié est trouvé. Cette approche multi-sources maximise la couverture tout en maintenant la fraîcheur des données.
+  </Accordion>
+  <Accordion title="Les emails sont-ils vérifiés ?">
+    Oui. Chaque adresse email passe par une double vérification : contrôle de syntaxe pour confirmer le bon format, puis contrôle SMTP pour confirmer que la boîte de réception existe et peut recevoir des messages. Seules les adresses validées sont écrites sur la fiche.
+  </Accordion>
+  <Accordion title="Puis-je enrichir toute ma base existante ?">
+    Oui. Cobalt propose un enrichissement historique ponctuel, disponible à l'onboarding. Vous exportez votre base, Cobalt la traite et vous retourne les fiches enrichies. Parlez à votre chargé de compte pour organiser l'opération.
+  </Accordion>
+  <Accordion title="Que se passe-t-il si je n'ai plus de crédits ?">
+    Cobalt vous envoie une notification lorsque votre solde est faible. Vous pouvez acheter un pack supplémentaire directement depuis vos paramètres de compte à tout moment, sans interrompre le service ni changer de plan.
+  </Accordion>
+</AccordionGroup>

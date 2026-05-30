@@ -1,0 +1,87 @@
+---
+title: "Profile enrichment"
+sidebarTitle: "Enrichment"
+description: "Automatically complete candidate profiles with verified emails, direct phone numbers, and LinkedIn data — no manual research required."
+---
+
+Cobalt's enrichment engine fills in the contact details you need to reach candidates without manual research. Whether you are working a single profile or several hundred, Cobalt runs a cascade query across multiple data sources, verifies every email address it finds, and writes the results directly to the candidate's profile.
+
+<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID_A_REMPLACER" title="Profile enrichment in Cobalt" frameBorder="0" allowFullScreen></iframe>
+
+## Three ways to enrich
+
+<Steps>
+  <Step title="Single profile enrichment">
+    Open a candidate card and click **Enrich**. Cobalt fetches the verified email address, direct phone number, LinkedIn profile URL, work experience history, listed skills, and education — all in one click. Results appear on the profile within seconds.
+  </Step>
+  <Step title="Bulk enrichment">
+    Select multiple profiles from any list view and click **Enrich All**. Cobalt processes profiles in batches and updates each record automatically. Ideal after importing a set of CVs, refreshing a talent pool, or running a new Balt search.
+  </Step>
+  <Step title="Chrome Extension — enrich directly from LinkedIn">
+    Install the [Cobalt Chrome Extension](/en/integrations/extension-chrome). From any LinkedIn profile, click the Cobalt icon to extract the candidate's email and phone number, add them to a Cobalt list, and sync the record to your CRM — all without leaving the LinkedIn tab.
+  </Step>
+</Steps>
+
+## Cascade method and verification
+
+Cobalt uses a **cascade (waterfall) method**: it queries multiple data providers in sequence and stops as soon as a valid result is found. This multi-source approach maximises coverage while maintaining data freshness.
+
+Email addresses go through a **double verification step** — a syntax check followed by an SMTP check to confirm the mailbox exists and can receive messages. Only addresses that pass both checks are written to the profile.
+
+<Note>
+  Effective coverage depends on the profile and sector. Cobalt does not guarantee a fixed coverage rate for every profile type.
+</Note>
+
+## Credit system
+
+Enrichment consumes credits from your monthly plan quota, shared across your entire team.
+
+| Action | Credit cost |
+|---|---|
+| 1 email enrichment | 2 credits |
+| 1 phone enrichment | 10 credits |
+
+**Monthly credits included by plan:**
+
+| Plan | Monthly credits |
+|---|---|
+| Free | Not included |
+| Core | `[TO CONFIRM]` |
+| Copilot | `[TO CONFIRM]` |
+| Enterprise | Unlimited |
+
+**Additional credit packs** are available at any time without a plan change. See the [Pricing page](https://cobalt.fr/tarifs) for details.
+
+<Info>
+  **Historical database enrichment:** at onboarding, you can request a one-off enrichment of your entire existing database in a single batch operation. Cobalt processes the full export and returns enriched records. Contact your account manager to include this in your onboarding plan.
+</Info>
+
+## GDPR compliance
+
+All enriched data is sourced exclusively from GDPR-compliant providers and stored on EU infrastructure with end-to-end encryption. Candidates can exercise their right to deletion at any time, and Cobalt propagates the deletion across all associated records automatically.
+
+## Plan availability
+
+| Plan | Enrichment |
+|---|---|
+| Free | Not included |
+| Core | Included (monthly quota) |
+| Copilot | Included (larger monthly quota) |
+| Enterprise | Unlimited |
+
+## Frequently asked questions
+
+<AccordionGroup>
+  <Accordion title="How does Cobalt find contact details?">
+    Cobalt queries multiple third-party data providers in sequence — the process stops as soon as a valid, verified result is found. This multi-source approach maximises coverage while keeping data fresh and accurate.
+  </Accordion>
+  <Accordion title="Is the email data verified?">
+    Yes. Every email address goes through a double verification step: a syntax check to confirm the address is correctly formatted, followed by an SMTP check to confirm the mailbox exists and can receive messages. Only addresses that pass both checks are written to the profile.
+  </Accordion>
+  <Accordion title="Can I enrich my entire existing database?">
+    Yes. Cobalt offers a one-off historical enrichment add-on, available at onboarding. You export your existing database, Cobalt processes it, and returns fully enriched records — no manual work required on your side. Speak to your account manager to set this up.
+  </Accordion>
+  <Accordion title="What if I run out of credits?">
+    Cobalt sends you a notification when your credit balance runs low. You can purchase an additional credit pack directly from your account settings at any time — there is no service interruption and no need to upgrade your plan.
+  </Accordion>
+</AccordionGroup>
