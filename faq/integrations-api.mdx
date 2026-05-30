@@ -1,0 +1,81 @@
+---
+title: "Cobalt Integrations FAQ: API, Webhooks, and Connectors"
+sidebarTitle: "Integrations & API"
+description: "Common questions about Cobalt's integrations with BoondManager, Google Workspace, Microsoft 365, and its REST API and webhooks availability."
+---
+
+Cobalt connects to the tools your team already uses — from your email client and calendar to your ERP and e-signature platform. Below are answers to the most common integration questions. If you need help setting up a specific integration, open the in-app chat and the team will guide you through it.
+
+<Accordion title="Which integrations does Cobalt support?">
+  Cobalt offers **40+ native integrations** as of 2026, including:
+
+  | Category | Integrations |
+  |---|---|
+  | ERP / staffing | BoondManager (native bidirectional) |
+  | Email & calendar | Microsoft 365 (Outlook, Calendar), Google Workspace (Gmail, Calendar) |
+  | Meetings | Microsoft Teams, Zoom, Google Meet |
+  | Scheduling | Cal.com |
+  | Sourcing | LinkedIn (Chrome Extension) |
+  | Messaging | Slack |
+  | E-signature | Docusign, Yousign |
+  | HR & payroll | PayFit |
+  | Automation | Make (1,500+ apps), n8n |
+
+  The integration library continues to grow with every monthly release.
+</Accordion>
+
+<Accordion title="How does the BoondManager integration work?">
+  The BoondManager integration is **native, real-time, and bidirectional**. Once connected, Cobalt and BoondManager automatically stay in sync — no manual exports or imports required.
+
+  Data synced between the two platforms includes:
+  - Candidates and consultant profiles
+  - Companies and contacts
+  - Projects and missions
+  - Placements and billing records
+
+  **Setup time**: approximately 5 minutes. You connect your BoondManager account from Cobalt's integration settings, authorize the connection, and the sync begins immediately.
+</Accordion>
+
+<Accordion title="Is there a REST API?">
+  Yes. Cobalt provides a **REST API** that lets you read and write data programmatically — candidates, companies, projects, placements, and more.
+
+  The REST API is available on **Core, Copilot, and Enterprise plans**. To get started:
+  1. Contact support via in-app chat to request API access
+  2. You'll receive your API credentials and a link to the full API documentation
+  3. Authenticate using your API key and start building
+
+  Rate limits and available endpoints are documented in the API reference.
+</Accordion>
+
+<Accordion title="Does Cobalt support webhooks?">
+  Yes. Cobalt's webhook system lets you subscribe to events and route payloads to any endpoint in real time. Available events include:
+
+  - Candidate created or updated
+  - Placement confirmed or updated
+  - Sequence step completed
+  - AI Screening call completed
+  - Enrichment credit threshold reached
+
+  Webhooks are available on the **Enterprise plan**. Configure and manage them from your account's developer settings. Contact support to enable webhook access on your account.
+</Accordion>
+
+<Accordion title="Can I connect Cobalt to Make or n8n?">
+  Yes. Cobalt connects natively to both **Make** (formerly Integromat) and **n8n** for custom workflow automation.
+
+  - **Make**: access Cobalt triggers and actions within Make's visual automation builder, with connections to 1,500+ other apps
+  - **n8n**: use Cobalt as a source or destination node in your self-hosted or cloud n8n workflows
+
+  These integrations are ideal for syncing Cobalt with tools that don't have a native Cobalt connector — for example, custom internal databases, legacy HR systems, or specialized niche platforms.
+</Accordion>
+
+<Accordion title="Are there job board integrations?">
+  Job board integrations for **APEC, HelloWork, France Travail,** and **LinkedIn** are on the roadmap and coming soon.
+
+  In the meantime, Cobalt's sourcing engine — **Balt** — gives you access to **800 million+ profiles** across the public web, GitHub, LinkedIn, and other professional networks directly within the platform. You can source, enrich, and add candidates to sequences without leaving Cobalt.
+</Accordion>
+
+<Accordion title="Can I import data from another ATS?">
+  Yes. Cobalt offers **free, fully assisted migration** from all major ATS platforms. The Cobalt migration team handles the import, field mapping, and validation — you don't need to prepare any files yourself.
+
+  See the [General FAQ](/faq/general) for the full list of supported platforms, migration timeline, and what data is transferred.
+</Accordion>

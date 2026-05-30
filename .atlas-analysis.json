@@ -1,0 +1,99 @@
+{
+  "projectType": "saas",
+  "projectName": "Cobalt",
+  "projectDescription": "Cobalt is an AI-first ATS & CRM platform built for staffing firms (ESN) and recruitment agencies, combining semantic search, autonomous AI agents, multichannel outreach sequences, meeting transcription, automated skills documents, and contact enrichment in a single unified workspace.",
+  "theme": "luma",
+  "primaryColor": "#8c8c84",
+  "lightColor": "#1d1d15",
+  "darkColor": "#f0f0ef",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "onboarding/account-setup",
+              "onboarding/invite-team"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/ai-agent-balt",
+              "features/semantic-search",
+              "features/enrichment",
+              "features/meeting-transcription",
+              "features/skills-documents",
+              "features/sequences",
+              "features/tasks-pipeline"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/boondmanager",
+              "integrations/google-microsoft",
+              "integrations/chrome-extension"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "use-cases/esn-staffing",
+              "use-cases/recruitment-agency",
+              "use-cases/intercontrat",
+              "use-cases/account-growth"
+            ]
+          },
+          {
+            "group": "Plans & Security",
+            "pages": [
+              "plans/pricing",
+              "plans/security-compliance"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & FAQ",
+        "groups": [
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq/general",
+              "faq/billing",
+              "faq/security-data",
+              "faq/integrations-api",
+              "faq/support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI agent Balt — autonomous sourcing and outreach in natural language",
+    "Semantic search across internal database and 800M+ public profiles",
+    "Automated contact enrichment (email, phone, LinkedIn) with 94%+ coverage",
+    "Meeting transcription with automatic CRM update (Google Meet, Teams, Zoom)",
+    "One-click branded skills documents (dossiers de compétences) in 30+ languages",
+    "Multichannel outreach sequences (Email + LinkedIn + WhatsApp)",
+    "Native bidirectional sync with BoondManager",
+    "Intercontract tracking with AI-powered repositioning playbook",
+    "GDPR-compliant EU hosting (Scaleway/AWS Paris)",
+    "AI Screening add-on with automated pre-qualification calls"
+  ],
+  "publicApiSurface": [
+    "REST API (available on Business plan)",
+    "Webhooks for candidate, project, and placement events",
+    "BoondManager bidirectional sync integration",
+    "Google Workspace / Microsoft 365 OAuth integration",
+    "Chrome Extension for LinkedIn profile import",
+    "Enrichment credits API (email, phone, LinkedIn)",
+    "Export API (JSON/CSV)"
+  ]
+}

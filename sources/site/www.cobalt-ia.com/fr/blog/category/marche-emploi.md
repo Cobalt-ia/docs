@@ -1,0 +1,13 @@
+# Source: https://www.cobalt-ia.com/fr/blog/category/marche-emploi
+
+# Marché de l'emploi
+
+Analyses du marché, salaires, tendances et secteurs d'ingénierie en France
+
+4 articles
+
+Tous
+
+TousSourcing & RecrutementTendances & Marché
+
+[![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flanding%2Flanding.jpg&w=3840&q=75)\\ \\ Recrutement BTP : Le guide complet pour attirer conducteurs de travaux et ingénieurs\\ \\ ![](https://www.cobalt-ia.com/images/brand/icon-grey.png)\\ \\ 2 février 2026\\ \\ **Recrutement BTP : Le guide complet pour attirer conducteurs de travaux et ingénieurs**\\ \\ Le BTP fait face à une pénurie historique de talents. Découvrez les stratégies qui fonctionnent pour recruter conducteurs de travaux, chefs de chantier et ingénieurs structure.\\ \\ Lire l’article](https://www.cobalt-ia.com/fr/blog/recrutement-ingenieur-btp-construction-guide) [![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flanding%2Flanding.jpg&w=3840&q=75)\\ \\ Recrutement ingénieur énergie : Le guide pour attirer les talents de la transition\\ \\ ![](https://www.cobalt-ia.com/images/brand/icon-grey.png)\\ \\ 26 janvier 2026\\ \\ **Recrutement ingénieur énergie : Le guide pour attirer les talents de la transition**\\ \\ Le secteur de l'énergie recrute massivement mais peine à trouver des profils qualifiés. Découvrez les stratégies pour sourcer et convaincre les ingénieurs ENR, nucléaire et réseaux.\\ \\ Lire l’article](https://www.cobalt-ia.com/fr/blog/recrutement-ingenieur-energie-guide) [![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flanding%2Flanding.jpg&w=3840&q=75)\\ \\ Salaires ingénieurs 2025 : grilles complètes par secteur et région\\ \\ ![](https://www.cobalt-ia.com/images/brand/icon-grey.png)\\ \\ 10 janvier 2026\\ \\ **Salaires ingénieurs 2025 : grilles complètes par secteur et région**\\ \\ Combien gagne un ingénieur en 2025 ? Grilles détaillées par expérience, secteur d'activité et région. Données actualisées pour recruteurs et candidats.\\ \\ Lire l’article](https://www.cobalt-ia.com/fr/blog/salaires-ingenieurs-2025-grilles-secteur-region) [![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flanding%2Flanding.jpg&w=3840&q=75)\\ \\ Pénurie d'ingénieurs en France : causes, chiffres et solutions en 2025\\ \\ ![](https://www.cobalt-ia.com/images/brand/icon-grey.png)\\ \\ 8 décembre 2025\\ \\ **Pénurie d'ingénieurs en France : causes, chiffres et solutions en 2025**\\ \\ La France manque de 60 000 ingénieurs par an. Analyse complète des causes structurelles, chiffres par secteur et solutions concrètes pour les recruteurs.\\ \\ Lire l’article](https://www.cobalt-ia.com/fr/blog/penurie-ingenieurs-france-causes-solutions-2025)

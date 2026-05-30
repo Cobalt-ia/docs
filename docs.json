@@ -1,0 +1,134 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Cobalt",
+  "description": "AI-first ATS & CRM for staffing firms and recruitment agencies. Documentation for recruiters and business managers.",
+  "colors": {
+    "primary": "#8c8c84",
+    "light": "#1d1d15",
+    "dark": "#f0f0ef"
+  },
+  "favicon": "https://media.brand.dev/7226e886-426b-4a53-88bf-5f53eb18afd1.svg",
+  "logo": {
+    "light": "https://media.brand.dev/38c760e7-696f-4360-8527-f220478229b7.png",
+    "dark": "https://media.brand.dev/38c760e7-696f-4360-8527-f220478229b7.png"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "house",
+          "href": "/"
+        },
+        {
+          "anchor": "Book a Demo",
+          "icon": "calendar",
+          "href": "https://cal.com/gregory-hissiger-2k73tl/cobalt-demo"
+        },
+        {
+          "anchor": "Pricing",
+          "icon": "credit-card",
+          "href": "https://www.cobalt-ia.com/fr/pricing"
+        }
+      ]
+    },
+    "directory": "card",
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "icon": "rocket",
+            "expanded": true,
+            "pages": [
+              "introduction",
+              "quickstart",
+              "onboarding/account-setup",
+              "onboarding/invite-team"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "icon": "sparkles",
+            "pages": [
+              "features/ai-agent-balt",
+              "features/semantic-search",
+              "features/enrichment",
+              "features/meeting-transcription",
+              "features/skills-documents",
+              "features/sequences",
+              "features/tasks-pipeline"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "icon": "plug",
+            "pages": [
+              "integrations/boondmanager",
+              "integrations/google-microsoft",
+              "integrations/chrome-extension"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "icon": "briefcase",
+            "pages": [
+              "use-cases/esn-staffing",
+              "use-cases/recruitment-agency",
+              "use-cases/intercontrat",
+              "use-cases/account-growth"
+            ]
+          },
+          {
+            "group": "Plans & Security",
+            "icon": "shield",
+            "pages": [
+              "plans/pricing",
+              "plans/security-compliance"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & FAQ",
+        "groups": [
+          {
+            "group": "FAQ",
+            "icon": "circle-help",
+            "pages": [
+              "faq/general",
+              "faq/billing",
+              "faq/security-data",
+              "faq/integrations-api",
+              "faq/support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Book a Demo",
+      "href": "https://cal.com/gregory-hissiger-2k73tl/cobalt-demo"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://linkedin.com/company/cobalt-ia"
+    }
+  }
+}

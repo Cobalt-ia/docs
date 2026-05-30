@@ -1,0 +1,89 @@
+---
+title: "Sequences: Automate Multichannel Candidate Outreach"
+sidebarTitle: "Sequences"
+description: "Build automated outreach sequences across Email, LinkedIn, and WhatsApp with AI-personalized messages and built-in anti-spam protection."
+---
+
+Sequences let you run coordinated, multichannel outreach campaigns that feel genuinely personal — not templated. Cobalt's AI generates a unique opening line for every candidate based on their actual profile, so your messages stand out in crowded inboxes. On average, recruiters using Cobalt sequences see a **+52% reply rate** compared to manual outreach. You can run unlimited simultaneous sequences, and the platform handles timing, deliverability, and smart pausing automatically.
+
+## Create a Sequence
+
+<Warning>
+  Connect your LinkedIn account and email before launching sequences. Go to **Settings → Integrations** to link your accounts.
+</Warning>
+
+<Steps>
+  <Step title="Go to Sequences → New Sequence">
+    From the main navigation, open **Sequences** and click **New Sequence** to open the visual builder.
+  </Step>
+  <Step title="Name your sequence and choose your audience">
+    Give your sequence a descriptive name and select your target audience — candidates or business prospects — so Cobalt applies the right personalization context.
+  </Step>
+  <Step title="Add steps and set delays">
+    Build your outreach flow by adding steps one by one. Choose the channel for each step — **Email**, **LinkedIn InMail**, **LinkedIn direct message**, or **WhatsApp** — then set the delay before the next step triggers (e.g., wait 3 days).
+  </Step>
+  <Step title="Write your messages or let AI personalize them">
+    Draft your message manually using dynamic variables, or click **AI Generate** to let Cobalt write a unique, context-aware opening line for each recipient based on their actual profile, experience, and skills — not just their first name.
+
+    Available dynamic variables:
+    ```text
+    {{first_name}}   – Candidate's first name
+    {{job_title}}    – Current or most recent job title
+    {{skills}}       – Key skills from their profile
+    {{location}}     – City or region
+    ```
+  </Step>
+  <Step title="Add branching conditions">
+    Insert conditional logic into your sequence to handle different scenarios. For example: *if no reply after 3 days, send a LinkedIn follow-up; if the candidate clicks the link, move to the next step immediately.* Drag-and-drop branches directly on the visual canvas.
+  </Step>
+  <Step title="Enable A/B testing (optional)">
+    Split your audience between two message variants to test subject lines, tones, or calls to action. Cobalt tracks open rates and reply rates per variant in real time so you can identify and scale what works.
+  </Step>
+  <Step title="Launch your sequence">
+    Activate the sequence. Cobalt sends messages on your behalf at the scheduled intervals, auto-detects each recipient's language from their profile, and **pauses the sequence automatically the moment a candidate replies** — so no one receives a follow-up after they've already responded.
+  </Step>
+</Steps>
+
+## Key Capabilities
+
+<CardGroup cols={2}>
+  <Card title="AI-personalized opening lines" icon="sparkles">
+    Cobalt generates a unique, contextually relevant opening line for every recipient based on their actual profile — not generic merge tags. Messages feel handwritten, at scale.
+  </Card>
+  <Card title="Multichannel in one flow" icon="arrows-split-up-and-left">
+    Combine Email, LinkedIn InMail, LinkedIn direct messages, and WhatsApp steps inside a single sequence. Reach candidates on the channels where they're most responsive.
+  </Card>
+  <Card title="Anti-spam protection" icon="shield-check">
+    Built-in email warm-up, sending address rotation, and bounce detection keep your domain reputation healthy and your messages out of spam folders.
+  </Card>
+  <Card title="Smart pause on reply" icon="circle-pause">
+    The sequence pauses automatically as soon as a candidate replies. No awkward follow-ups land after a conversation has already started.
+  </Card>
+  <Card title="Send delegation" icon="user-group">
+    Send sequence messages from a colleague's or manager's mailbox — useful when a senior recruiter's name carries more weight with a specific candidate segment.
+  </Card>
+  <Card title="Real-time analytics" icon="chart-line">
+    Monitor opens, clicks, replies, and bounces per campaign as they happen. Use A/B test results to continuously sharpen your messaging.
+  </Card>
+</CardGroup>
+
+## Supported Channels
+
+| Channel | Use case |
+|---|---|
+| Email | Primary outreach and follow-ups |
+| LinkedIn InMail | Reaching candidates not in your network |
+| LinkedIn direct message | Engaging first-degree connections |
+| WhatsApp | High-touch, conversational follow-ups |
+
+## Auto-Language Detection
+
+Cobalt reads the language set on each candidate's profile and sends your message in that language automatically. You write the sequence once; Cobalt handles localization per recipient.
+
+## Plans & Availability
+
+| Plan | Sequences |
+|---|---|
+| Core | Limited sequences |
+| Copilot | Unlimited |
+| Enterprise | Unlimited |

@@ -1,0 +1,90 @@
+---
+title: "Cobalt Security FAQ: Hosting, Encryption, GDPR, and DPA"
+sidebarTitle: "Security & Data"
+description: "Answers about where your data is hosted, how Cobalt handles GDPR compliance, encryption standards, audit logs, certifications, and data ownership rights."
+---
+
+Cobalt treats data security and GDPR compliance as core product requirements — not afterthoughts. Below are answers to the most common questions about how your data is protected and what rights you have over it. For detailed technical documentation, see the [Security & Compliance](/plans/security-compliance) page.
+
+<Accordion title="Where is my data hosted?">
+  Your data is hosted **100% in Europe**, across two French infrastructure providers:
+
+  - **AWS Paris** — eu-west-3 region
+  - **Scaleway** — France
+
+  No data is ever transferred to, processed in, or accessed from outside the European Union. This applies to your candidate records, company data, call recordings, and AI-generated outputs.
+</Accordion>
+
+<Accordion title="Is Cobalt GDPR-compliant?">
+  Yes — and GDPR compliance is built into Cobalt's core workflows, not bolted on as a settings menu.
+
+  Cobalt provides:
+  - **Consent management**: track and enforce candidate consent before any contact
+  - **Right to erasure**: delete any profile in one click; data is removed from all systems
+  - **Data portability**: export any profile or your full database in JSON/CSV at any time
+  - **Breach notification**: Cobalt follows GDPR Article 33 — you are notified within 72 hours if a breach affects your data
+  - **DPA included**: a Data Processing Agreement is included with all plans, including the Free plan
+</Accordion>
+
+<Accordion title="How is data encrypted?">
+  Cobalt applies industry-standard encryption at every layer:
+
+  - **At rest**: AES-256 encryption for all stored data, including candidate records, documents, and call recordings
+  - **In transit**: TLS 1.3 for all data moving between your browser and Cobalt's servers
+
+  Encryption is always on — there is no option to disable it, and no unencrypted data path.
+</Accordion>
+
+<Accordion title="Does Cobalt use my data to train AI models?">
+  No. Cobalt does **not** use your data to train any AI model — not OpenAI's, not Anthropic's, and not Cobalt's own models. This is a **contractual commitment** written into the Data Processing Agreement (DPA) that comes with every plan.
+
+  If you are on the Enterprise plan with a custom DPA, this clause is explicitly negotiable and will be included by default.
+</Accordion>
+
+<Accordion title="Who owns my data?">
+  You own **100% of your data**. Cobalt claims no rights over your candidate records, placement history, company data, or any other information you store in the platform.
+
+  You can export everything at any time:
+  - From your account settings, click **Export** to download your full database
+  - Exports are available in **JSON** and **CSV** format
+  - No support request is required — the export runs immediately
+</Accordion>
+
+<Accordion title="Can I delete a candidate from Cobalt?">
+  Yes. You can delete any candidate profile in **one click** from the candidate record. When you delete a profile:
+
+  - The record is removed from your candidate database
+  - Associated data is removed from all Cobalt systems, including enrichment data, call recordings, AI summaries, and audit references
+  - The deletion is logged in your audit trail for compliance purposes
+
+  This satisfies the **GDPR right to erasure** (Article 17) for candidate deletion requests you receive.
+</Accordion>
+
+<Accordion title="Does Cobalt have audit logs?">
+  Yes. Every action taken in Cobalt — by any user or by an AI agent — is recorded in an **immutable audit log**. Audit logs are:
+
+  - **Queryable**: filter by date range, user, action type, or record
+  - **Exportable**: download as CSV for compliance reporting or legal review
+  - **Immutable**: no user, including admins, can edit or delete log entries
+
+  Audit logs are available to all admin users on all plans.
+</Accordion>
+
+<Accordion title="What certifications does Cobalt have?">
+  | Initiative | Status |
+  |---|---|
+  | ISO 27001 | In progress — expected 2026 |
+  | Annual penetration tests | Active |
+  | Bug bounty program | Active (responsible disclosure) |
+
+  Cobalt conducts annual penetration tests with an independent external security firm. Results inform the next development cycle. The bug bounty program allows security researchers to report vulnerabilities responsibly.
+</Accordion>
+
+<Accordion title="Is there a DPA available?">
+  Yes. A **Data Processing Agreement (DPA)** is included with every Cobalt plan — including the Free plan. You do not need to be a paying customer to access it.
+
+  - **Standard DPA**: available immediately; covers all GDPR requirements for data processors
+  - **Custom DPA**: available on the Enterprise plan; negotiable to meet your group's specific legal, contractual, or regulatory requirements
+
+  To access the standard DPA or request a custom version, contact the team via in-app chat or email [team@cobalt-ia.com](mailto:team@cobalt-ia.com).
+</Accordion>

@@ -1,0 +1,7 @@
+# Source: https://www.cobalt-ia.com/fr/cas-clients
+
+[![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Fcase-studies%2Fspie.jpg&w=3840&q=75)\\ \\ ![SPIE](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flogos%2Fspie.png&w=384&q=75)\\ \\ **Répondre aux appels d’offres techniques sans saturer les équipes**\\ \\ Lire le cas client](https://www.cobalt-ia.com/fr/cas-clients/spie) [![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Fcase-studies%2Fleaf.jpg&w=3840&q=75)\\ \\ ![Leaf Ingénierie](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flogos%2Fleaf.png&w=384&q=75)\\ \\ **Mettre la qualité de la relation candidat au premier plan**\\ \\ Lire le cas client](https://www.cobalt-ia.com/fr/cas-clients/leaf) [![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Fcase-studies%2Ftech4kin.jpg&w=3840&q=75)\\ \\ ![Tech4Kin](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flogos%2Ftech4kin.png&w=384&q=75)\\ \\ **Construire un pipeline commercial dès le démarrage de l’ESN**\\ \\ Lire le cas client](https://www.cobalt-ia.com/fr/cas-clients/tech4kin) [![](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Fcase-studies%2Fmiles-group.jpg&w=3840&q=75)\\ \\ ![Miles Group](https://www.cobalt-ia.com/_next/image?url=%2Fimages%2Flogos%2Fmiles-group.png&w=384&q=75)\\ \\ **Maintenir zéro intercontrat grâce à une automatisation de bout en bout**\\ \\ Lire le cas client](https://www.cobalt-ia.com/fr/cas-clients/miles-group)
+
+## Plus de placements. Moins d’intercontrat.
+
+[Réservez une démo](https://cal.com/gregory-hissiger-2k73tl/cobalt-demo)

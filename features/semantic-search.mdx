@@ -1,0 +1,57 @@
+---
+title: "Semantic Search: Find Candidates Beyond Keywords"
+sidebarTitle: "Semantic Search"
+description: "Cobalt's semantic search understands job title synonyms and context so you find the right candidates faster without writing complex boolean queries."
+---
+
+Traditional keyword search only returns profiles that contain the exact words you type. Cobalt's semantic search understands what you mean, not just what you write. It recognises synonyms, interprets context, and maps equivalent job titles automatically — so when you search for a *"DevOps engineer"*, you also surface *"SRE"*, *"Platform Engineer"*, and *"Infrastructure Engineer"* profiles without writing a single boolean clause.
+
+## How Semantic Search Works
+
+Cobalt's search layer uses a vectorised AI model trained specifically on IT and ESN recruitment job titles and competency taxonomies. When you enter a search term, the model maps it to a semantic space that captures related concepts, equivalent titles, and contextual synonyms.
+
+**Example mappings in practice:**
+
+- *"Chef de projet digital"* → also matches *"Digital PM"*, *"Head of Digital"*, *"Responsable transformation numérique"*
+- *"DevOps"* → also matches *"SRE"*, *"Platform Engineer"*, *"Infrastructure Engineer"*
+- *"Senior cloud engineer"* → also matches *"Lead Engineer AWS/GCP"*, *"Cloud Architect"*, *"Solutions Engineer"*
+
+This means you describe the role the way you'd talk about it internally, and Cobalt handles the translation across job title variations — including French/English equivalents common in the French ESN market.
+
+## Relevance Scoring
+
+Every candidate returned by a search receives a relevance score built from four weighted criteria:
+
+| Criterion | Weight |
+|---|---|
+| Skills & competencies | 40% |
+| Availability | 25% |
+| Location | 20% |
+| Seniority | 15% |
+
+<Note>
+  Default weights are configured for general IT and consulting recruitment. Contact support if you need criterion weights adjusted to match your practice area or business model.
+</Note>
+
+## Semantic Search vs. Boolean Search
+
+| | Boolean Search | Cobalt Semantic Search |
+|---|---|---|
+| **Matching logic** | Exact keyword matching | Understands meaning and context |
+| **Synonym handling** | Manual — you must list every variant | Automatic — covered by the AI model |
+| **Query complexity** | High — requires operators, quotes, wildcards | None — write naturally |
+| **Result quality** | Only what you typed | Ranked by relevance across related concepts |
+| **Missing candidates** | High risk if synonyms omitted | Low risk — equivalent titles surfaced automatically |
+
+## Plan Availability
+
+| Plan | Semantic Search |
+|---|---|
+| Free | 15–20 searches / month |
+| Core | Unlimited |
+| Copilot | Unlimited |
+| Enterprise | Unlimited |
+
+<Tip>
+  Describe the role as you would to a colleague: *"senior backend developer, 5+ years, fintech experience, available in Paris"*. Cobalt handles the synonym mapping, scoring, and ranking — you just review the shortlist.
+</Tip>
