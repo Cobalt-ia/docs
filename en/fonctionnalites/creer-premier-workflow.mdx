@@ -10,3 +10,27 @@ description: "What workflows are for in Cobalt and how they are assembled."
 A workflow is assembled from **blocks** — a trigger, then steps (wait, search, update, communication, manual action, calling another workflow, and so on) — and runs automatically based on its trigger.
 
 See the [Block list](/en/fonctionnalites/liste-blocs) for the details of each available block.
+
+<img src="/images/workflow-execution.png" alt="A workflow and its steps: trigger, wait, communication — with one step completed successfully" />
+
+## Workflow examples
+
+A few concrete examples:
+
+- **Multichannel outreach** — send a LinkedIn connection request, then a first LinkedIn message; if not connected, send an email; otherwise, enrich the phone number, create a manual task, and call the person.
+- **New opportunity** — when an opportunity is created, source (internally and externally) potentially relevant candidates, add them to a project, with human validation to keep or discard profiles.
+- **After an interview** — transcribe the interview, re-enrich the profile, generate a new version of the skills document from the enriched profile, then send a follow-up email to the candidate with next steps.
+- **Status sync** — when a candidate moves to "top profile" status in a project, also update their "top profile" status in the ATS.
+
+…and many more depending on your processes.
+
+## Human validation
+
+Most blocks have a **human validation** option: the workflow **does not continue** until the user validates (or invalidates) it.
+
+This is handy for validating auto-sourced candidates, or for reviewing and personalizing certain emails before they're sent — anything that helps **keep quality high while doing volume** through automation.
+
+You can run everything fully automatically if you want, or — recommended — run it **semi-manually** to focus on the highest-value actions.
+
+<img src="/images/workflow-validation.png" alt="A running workflow with a step awaiting approval: review the email, then validate and move to the next step" />
+

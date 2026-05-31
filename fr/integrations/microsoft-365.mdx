@@ -2,27 +2,17 @@
 title: "Intégration Microsoft 365"
 icon: "mail"
 sidebarTitle: "Microsoft 365"
-description: "Connectez Outlook, Microsoft Calendar et Microsoft Teams à Cobalt pour envoyer vos séquences, synchroniser votre agenda et activer la transcription automatique des réunions."
+description: "Connectez Outlook, Microsoft Calendar et Microsoft Teams à Cobalt pour envoyer vos emails, synchroniser votre agenda et activer la transcription automatique des réunions."
 ---
-
-Connecter Microsoft 365 lie votre **Outlook**, **Microsoft Calendar** et **Microsoft Teams** à Cobalt. Une fois la connexion établie, vous pouvez envoyer et recevoir des emails directement dans Cobalt, laisser l'agent Balt rejoindre vos réunions Teams automatiquement, et obtenir la transcription de chaque réunion enregistrée sur les profils de vos candidats.
-
-<Info>
-  Chaque membre de l'équipe doit connecter son propre compte individuellement. Les séquences sont envoyées depuis l'adresse email personnelle de chaque utilisateur via Microsoft 365.
-</Info>
-
-<Warning>
-  La transcription des réunions nécessite que la synchronisation du calendrier soit active. Sans synchronisation du calendrier, Balt ne peut pas rejoindre les réunions Teams automatiquement.
-</Warning>
 
 ## Fonctionnalités débloquées
 
-- **Envoi et réception d'emails depuis Cobalt** — les séquences d'approche partent de votre adresse Outlook via Microsoft 365, et les réponses arrivent directement sur le profil du candidat dans Cobalt.
+- **Envoi et réception d'emails depuis Cobalt** — vos emails partent de votre adresse Outlook via Microsoft 365, et les réponses arrivent directement sur le profil du candidat dans Cobalt.
 - **Synchronisation Microsoft Calendar** — vos événements de calendrier apparaissent dans Cobalt pour que votre pipeline reste synchronisé avec votre planning.
 - **Participation automatique de l'agent Balt** — lorsqu'un lien de réunion Teams est détecté sur un événement de calendrier, Balt rejoint l'appel automatiquement pour le transcrire.
 - **Transcription des réunions via Microsoft Teams** — les transcriptions et résumés sont attachés au profil du candidat ou du contact concerné.
 
-Pour en savoir plus sur la transcription, consultez [Transcription de réunions](/fr/fonctionnalites/transcription). Pour configurer vos séquences d'approche, consultez [Séquences](/fr/fonctionnalites/sequences).
+Pour en savoir plus sur la transcription, consultez [Transcription de réunions](/fr/fonctionnalites/transcription).
 
 ## Comment connecter
 
@@ -36,7 +26,19 @@ Pour en savoir plus sur la transcription, consultez [Transcription de réunions]
   <Step title="Se connecter et accorder les permissions">
     Connectez-vous avec votre compte Microsoft et accordez les permissions demandées pour **Outlook**, **Calendar** et **Teams**.
   </Step>
-  <Step title="Confirmer et commencer à utiliser Cobalt">
-    Cobalt confirme la connexion. Vos séquences peuvent désormais être envoyées depuis votre adresse Outlook, et la synchronisation du calendrier est active.
+  <Step title="Confirmer la connexion">
+    Cobalt confirme la connexion. Vous pouvez désormais envoyer des emails depuis votre adresse Outlook, et la synchronisation du calendrier est active.
+  </Step>
+  <Step title="Ajouter votre signature">
+    Pour utiliser votre signature email dans Cobalt, copiez-la manuellement et ajoutez-la dans vos **paramètres personnels**, section **Signature**.
+
+    Vous pouvez créer **plusieurs signatures** et en changer au moment d'envoyer un email. Dans les **workflows**, c'est la **signature par défaut** (marquée d'une ★) qui est utilisée.
+
+    <img src="/images/signature-email.png" alt="Section Signatures email dans les paramètres personnels" width="520" />
   </Step>
 </Steps>
+
+## Bon à savoir
+
+- Chaque membre de l'équipe doit connecter son propre compte individuellement. Les emails partent de l'adresse personnelle de chaque utilisateur via Microsoft 365.
+- La transcription des réunions nécessite que la synchronisation du calendrier soit active : sans elle, Balt ne peut pas rejoindre les réunions Teams automatiquement.

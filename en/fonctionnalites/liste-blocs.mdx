@@ -2,7 +2,7 @@
 title: "Block list"
 sidebarTitle: "Block list"
 icon: "blocks"
-description: "The building blocks available to create a workflow in Cobalt: trigger, wait, search, update, communication, manual action, and calling another workflow."
+description: "The building blocks available to create a workflow in Cobalt: trigger, wait, search, condition, communication, and calling another workflow."
 ---
 
 A Cobalt workflow is built by assembling blocks. This page lists the available blocks.
@@ -11,39 +11,30 @@ A Cobalt workflow is built by assembling blocks. This page lists the available b
 
 The trigger block defines the event that starts the workflow. Every workflow begins with a trigger.
 
-### <Icon icon="play" /> Manual trigger
+<img src="/images/bloc-trigger.png" alt="Add a trigger — every workflow begins with a trigger" width="420" />
 
-The workflow is started manually by a user.
+Several trigger types exist:
 
-### <Icon icon="clock" /> Scheduled trigger
-
-The workflow runs on a schedule (time, day, recurrence).
-
-### <Icon icon="refresh-cw" /> Update trigger
-
-The workflow runs when a field or record is updated.
-
-### <Icon icon="sparkles" /> Creation trigger
-
-The workflow runs when a record is created (candidate, need, company, etc.).
+- **Manual trigger** — the workflow is started manually by a user.
+- **Scheduled trigger** — the workflow runs on a schedule (time, day, recurrence).
+- **Update trigger** — the workflow runs when a field or record is updated.
+- **Creation trigger** — the workflow runs when a record is created (candidate, need, company, etc.).
 
 ## <Icon icon="hourglass" /> Wait block
 
-Pauses the workflow for a defined duration before moving to the next step.
+Pauses the workflow for a defined duration (days, hours, minutes) before moving to the next step.
+
+<img src="/images/bloc-attente.png" alt="Wait block with its configurable duration" width="420" />
 
 ## <Icon icon="search" /> Search block
 
-Searches for profiles, for sourcing or prospecting.
+Searches for sourcing or prospecting. You can search for **candidates**, **contacts**, or **companies**.
 
-## <Icon icon="globe" /> Internet search block
+<img src="/images/bloc-recherche-candidats.png" alt="Search block: search candidates" width="420" />
 
-Searches any useful information on the internet that can be used later in the workflow.
+<img src="/images/bloc-recherche-contacts.png" alt="Search block: search contacts" width="420" />
 
-For example: find job postings similar to a candidate you want to place, identify the authors of those postings, find them on LinkedIn, and surface them as **prospects** who might be interested in meeting that candidate.
-
-## <Icon icon="pencil" /> Update block
-
-Updates any field of a record: candidate, client, need, company, etc.
+<img src="/images/bloc-recherche-entreprises.png" alt="Search block: search companies" width="420" />
 
 ## <Icon icon="send" /> Communication block
 
@@ -55,10 +46,40 @@ Sends a message through the channel of your choice:
 - Send a WhatsApp message
 - …
 
-## <Icon icon="list-todo" /> Manual action block
+<img src="/images/bloc-comm-email.png" alt="Communication block: send an email" width="420" />
 
-Creates a manual task for a user — for example, calling someone.
+<img src="/images/bloc-comm-linkedin-connexion.png" alt="Communication block: send a LinkedIn connection request" width="420" />
+
+<img src="/images/bloc-comm-linkedin-message.png" alt="Communication block: send a LinkedIn message" width="420" />
+
+## <Icon icon="git-fork" /> Condition block
+
+Creates a branch based on a lead's action: the workflow follows the **Yes** or **No** branch depending on whether the condition is met.
+
+<img src="/images/bloc-condition.png" alt="Condition block with Yes and No branches" width="420" />
 
 ## <Icon icon="workflow" /> Call-a-workflow block
 
 Calls another workflow from the current one.
+
+<img src="/images/bloc-appel-workflow.png" alt="Block that calls another workflow" width="420" />
+
+## Coming soon
+
+These blocks are **not available yet**:
+
+### <Icon icon="globe" /> Internet search block
+
+Searches any useful information on the internet that can be used later in the workflow.
+
+### <Icon icon="pencil" /> Update block
+
+Updates any field of a record: candidate, client, need, company, etc.
+
+### <Icon icon="calendar" /> Meeting block
+
+Schedules a meeting with the lead within the workflow.
+
+### <Icon icon="list-todo" /> Manual action block
+
+Creates a manual task for a user — for example, calling someone.
