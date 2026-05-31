@@ -2,24 +2,22 @@
 title: "Connecter Cobalt à BoondManager"
 icon: "database"
 sidebarTitle: "BoondManager"
-description: "L'intégration native bidirectionnelle de Cobalt avec BoondManager synchronise candidats, projets et positionnements en temps réel — zéro double saisie."
+description: "L'intégration native bidirectionnelle de Cobalt avec BoondManager synchronise candidats, clients, besoins et entreprises en temps réel."
 ---
 
-Cobalt dispose d'une intégration native avec BoondManager. Une fois connectés, candidats, entreprises, projets et positionnements circulent automatiquement entre les deux plateformes en temps réel — votre équipe travaille dans l'outil de son choix sans jamais dupliquer de données manuellement.
+Cobalt dispose d'une intégration native avec BoondManager. Une fois connectés, candidats, clients, besoins et entreprises circulent automatiquement entre les deux plateformes en temps réel.
 
 ## Ce qui se synchronise
 
-| Donnée | Direction |
-|---|---|
-| Candidats | Cobalt ↔ BoondManager |
-| Entreprises | Cobalt ↔ BoondManager |
-| Projets et missions | Cobalt ↔ BoondManager |
-| Positionnements | Cobalt ↔ BoondManager |
-| Documents de compétences | Cobalt → BoondManager |
-| Notes de réunion et transcriptions | Cobalt → BoondManager |
+La synchronisation est **bidirectionnelle** et en **temps réel** pour :
+
+- Candidats
+- Clients
+- Besoins
+- Entreprises
 
 <Info>
-  Les modifications effectuées dans BoondManager apparaissent dans Cobalt en quelques secondes, et inversement. Aucune synchronisation planifiée n'est nécessaire.
+  Toute modification effectuée d'un côté apparaît de l'autre en quelques secondes. Aucune synchronisation planifiée n'est nécessaire.
 </Info>
 
 ## Comment connecter
@@ -30,27 +28,25 @@ Cobalt dispose d'une intégration native avec BoondManager. Une fois connectés,
 
 <Steps>
   <Step title="Ouvrir les intégrations">
-    Dans Cobalt, accédez à **Paramètres → Intégrations**.
+    Dans Cobalt, accédez à **Paramètres → Intégrations** et cliquez sur **BoondManager**.
   </Step>
-  <Step title="Sélectionner BoondManager">
-    Cliquez sur **BoondManager** dans la liste des intégrations.
+  <Step title="Renseigner les 3 identifiants">
+    La connexion requiert trois identifiants :
+
+    - **Jeton client**
+    - **Clé client**
+    - **Jeton utilisateur**
+
+    Le **jeton client** et la **clé client** se trouvent dans BoondManager sous **Administration → Espace développeur → API / Sandbox**.
+
+    Le **jeton utilisateur** se trouve dans **Mon compte**, en ouvrant le menu déroulant **API**.
+
+    <img src="/images/boondmanager-identifiants.png" alt="Modale d'intégration BoondManager : jeton client, clé client, jeton utilisateur et Light mode" width="420" />
   </Step>
-  <Step title="Saisir votre clé API">
-    Collez votre clé API BoondManager. Vous la trouverez dans BoondManager sous **Admin → API**.
+  <Step title="(Optionnel) Activer le Light mode">
+    Le **Light mode** limite la consommation d'API lors de la synchronisation : il ignore les données les moins importantes (par exemple les avatars). Recommandé si votre forfait BoondManager comprend peu d'appels API et une grande base de données. Vous retrouvez votre consommation dans l'**espace développeur** de BoondManager.
   </Step>
-  <Step title="Autoriser la connexion">
-    Cliquez sur **Autoriser**. Cobalt établit la connexion avec votre compte BoondManager.
-  </Step>
-  <Step title="Laisser la synchronisation initiale s'exécuter">
-    La synchronisation initiale démarre automatiquement. Cobalt réconcilie vos données existantes sur les deux plateformes — aucune intervention manuelle n'est requise.
+  <Step title="Lancer la synchronisation">
+    Une fois les trois jetons renseignés, lancez la synchronisation. Selon la taille de votre base, elle prend entre **2 minutes** (moins de 5 000 enregistrements) et **1 heure** (plus de 100 000). Tout se fait de manière **asynchrone** : vous n'avez rien à faire de votre côté.
   </Step>
 </Steps>
-
-## Ce que Cobalt apporte en complément de BoondManager
-
-BoondManager gère vos workflows back-office. Cobalt y ajoute l'IA et l'automatisation sur les données que vous y avez déjà :
-
-- **Recherche sémantique par IA** — trouvez le bon candidat dans l'ensemble de votre base BoondManager grâce à des requêtes en langage naturel, sans filtres par mots-clés.
-- **Séquences d'approche multicanal** — lancez des séquences personnalisées par email et LinkedIn directement depuis Cobalt, en utilisant les données candidats et projets de BoondManager.
-- **Génération automatique de documents de compétences** — Cobalt génère des CV et documents de compétences formatés et les renvoie automatiquement vers les profils BoondManager.
-- **Transcription de réunions avec mise à jour automatique** — chaque appel ou visioconférence est transcrit et le résumé est enregistré sur le profil BoondManager correspondant.

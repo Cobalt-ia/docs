@@ -2,24 +2,22 @@
 title: "Connect Cobalt to BoondManager"
 icon: "database"
 sidebarTitle: "BoondManager"
-description: "Cobalt's native two-way BoondManager integration syncs candidates, projects, and placements in real time — zero double entry."
+description: "Cobalt's native two-way BoondManager integration syncs candidates, clients, needs, and companies in real time."
 ---
 
-Cobalt has a native integration with BoondManager. Once connected, candidates, companies, projects, and placements flow automatically between both platforms in real time — so your team works in whichever tool they prefer without ever duplicating data manually.
+Cobalt has a native integration with BoondManager. Once connected, candidates, clients, needs, and companies flow automatically between both platforms in real time.
 
 ## What syncs
 
-| Data | Direction |
-|---|---|
-| Candidates | Cobalt ↔ BoondManager |
-| Companies | Cobalt ↔ BoondManager |
-| Projects & missions | Cobalt ↔ BoondManager |
-| Placements (positionnements) | Cobalt ↔ BoondManager |
-| Skills documents | Cobalt → BoondManager |
-| Meeting notes & transcripts | Cobalt → BoondManager |
+The sync is **two-way** and in **real time** for:
+
+- Candidates
+- Clients
+- Needs
+- Companies
 
 <Info>
-  Changes made in BoondManager appear in Cobalt within seconds, and vice versa. No scheduled sync required.
+  Any change made on one side appears on the other within seconds. No scheduled sync required.
 </Info>
 
 ## How to connect
@@ -30,27 +28,25 @@ Cobalt has a native integration with BoondManager. Once connected, candidates, c
 
 <Steps>
   <Step title="Open Integrations">
-    In Cobalt, navigate to **Settings → Integrations**.
+    In Cobalt, go to **Settings → Integrations** and click **BoondManager**.
   </Step>
-  <Step title="Select BoondManager">
-    Click **BoondManager** in the integrations list.
+  <Step title="Enter the 3 credentials">
+    The connection requires three credentials:
+
+    - **Client token**
+    - **Client key**
+    - **User token**
+
+    The **client token** and **client key** are found in BoondManager under **Administration → Developer space → API / Sandbox**.
+
+    The **user token** is found under **My account**, by opening the **API** dropdown menu.
+
+    <img src="/images/boondmanager-identifiants.png" alt="BoondManager integration dialog: client token, client key, user token, and Light mode" width="420" />
   </Step>
-  <Step title="Enter your API key">
-    Paste your BoondManager API key. You can find it in BoondManager under **Admin → API**.
+  <Step title="(Optional) Enable Light mode">
+    **Light mode** limits API consumption during the sync: it skips the least important data (for example avatars). Recommended if your BoondManager plan includes few API calls and a large database. You can check your consumption in BoondManager's **Developer space**.
   </Step>
-  <Step title="Authorize the connection">
-    Click **Authorize**. Cobalt establishes the connection to your BoondManager account.
-  </Step>
-  <Step title="Let the initial sync run">
-    The initial sync starts automatically. Cobalt reconciles your existing data across both platforms — no manual intervention required.
+  <Step title="Start the sync">
+    Once the three tokens are entered, start the sync. Depending on the size of your database, it takes between **2 minutes** (under 5,000 records) and **1 hour** (over 100,000). Everything runs **asynchronously** — there's nothing to do on your side.
   </Step>
 </Steps>
-
-## What Cobalt adds on top of BoondManager
-
-BoondManager handles your back-office workflows. Cobalt layers AI and automation on top of the data you already have there:
-
-- **AI-powered semantic search** — find the right candidate from your entire BoondManager base using natural-language queries, not keyword filters.
-- **Multichannel outreach sequences** — trigger personalized email and LinkedIn sequences directly from Cobalt using BoondManager candidate and project data.
-- **Automatic skills document generation** — Cobalt generates formatted CVs and competency documents and pushes them back to BoondManager profiles.
-- **Meeting transcription with auto-update** — every call or video meeting is transcribed and the summary is written back to the matching BoondManager profile automatically.
