@@ -10,3 +10,27 @@ Les **workflows** permettent d'**automatiser partiellement ou totalement** des t
 Un workflow s'assemble à partir de **blocs** — un déclencheur, puis des étapes (attente, recherche, modification, communication, action manuelle, appel d'un autre workflow…) — et s'exécute automatiquement selon son déclencheur.
 
 Voir la [Liste de blocs](/fr/fonctionnalites/liste-blocs) pour le détail de chaque bloc disponible.
+
+<img src="/images/workflow-execution.png" alt="Workflow et ses étapes : déclencheur, attente, communication — avec une étape exécutée avec succès" />
+
+## Exemples de workflows
+
+Quelques exemples concrets :
+
+- **Approche multicanal** — envoyer une demande de connexion LinkedIn, puis un premier message LinkedIn ; sans ajout, envoyer un email ; sinon, enrichir le numéro de téléphone, créer une tâche manuelle et appeler la personne.
+- **Nouvelle opportunité** — à la création d'une opportunité, sourcer (en interne et en externe) des candidats potentiellement pertinents, les ajouter à un projet, avec une validation humaine pour valider ou écarter les profils.
+- **Après un entretien** — transcrire l'entretien, réenrichir le profil, générer une nouvelle version du dossier de compétences à partir du profil enrichi, puis envoyer un email de follow-up au candidat avec les prochaines étapes.
+- **Synchronisation de statut** — lorsqu'un candidat passe au statut « top profil » dans un projet, mettre aussi à jour son statut « top profil » dans l'ATS.
+
+…et bien d'autres selon vos processus.
+
+## Validation humaine
+
+La plupart des blocs disposent d'une option de **validation humaine** : le workflow **ne continue pas** tant que l'utilisateur ne l'a pas validé (ou invalidé).
+
+C'est pratique pour valider des candidats sourcés automatiquement, ou pour relire et personnaliser certains emails avant l'envoi — tout ce qui permet de **conserver une qualité optimale tout en faisant du volume** grâce à l'automatisation.
+
+Vous pouvez ainsi tout exécuter en automatique si vous le souhaitez, ou — c'est conseillé — fonctionner en **semi-manuel** pour vous concentrer sur les actions à forte valeur ajoutée.
+
+<img src="/images/workflow-validation.png" alt="Workflow en cours avec étape en attente d'approbation : relire l'email puis valider et passer à l'étape suivante" />
+

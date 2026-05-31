@@ -2,7 +2,7 @@
 title: "Liste de blocs"
 sidebarTitle: "Liste de blocs"
 icon: "blocks"
-description: "Les différents blocs disponibles pour construire un workflow dans Cobalt : déclencheur, attente, recherche, modification, communication, action manuelle et appel d'un autre workflow."
+description: "Les différents blocs disponibles pour construire un workflow dans Cobalt : déclencheur, attente, recherche, condition, communication et appel d'un autre workflow."
 ---
 
 Un workflow Cobalt se construit en assemblant des blocs. Cette page présente les différents blocs disponibles.
@@ -11,39 +11,30 @@ Un workflow Cobalt se construit en assemblant des blocs. Cette page présente le
 
 Le bloc de déclenchement définit l'événement qui démarre le workflow. Tout workflow commence par un déclencheur.
 
-### <Icon icon="play" /> Déclencheur manuel
+<img src="/images/bloc-trigger.png" alt="Ajouter un déclencheur — chaque workflow commence par un déclencheur" width="420" />
 
-Le workflow est lancé manuellement par un utilisateur.
+Plusieurs types de déclencheurs existent :
 
-### <Icon icon="clock" /> Déclencheur planifié
-
-Le workflow s'exécute selon une planification (heure, jour, récurrence).
-
-### <Icon icon="refresh-cw" /> Déclencheur de modification
-
-Le workflow se déclenche lorsqu'un champ ou un enregistrement est modifié.
-
-### <Icon icon="sparkles" /> Déclencheur de création
-
-Le workflow se déclenche lors de la création d'un enregistrement (candidat, besoin, entreprise, etc.).
+- **Déclencheur manuel** — le workflow est lancé manuellement par un utilisateur.
+- **Déclencheur planifié** — le workflow s'exécute selon une planification (heure, jour, récurrence).
+- **Déclencheur de modification** — le workflow se déclenche lorsqu'un champ ou un enregistrement est modifié.
+- **Déclencheur de création** — le workflow se déclenche lors de la création d'un enregistrement (candidat, besoin, entreprise, etc.).
 
 ## <Icon icon="hourglass" /> Bloc d'attente
 
-Met le workflow en pause pendant une durée définie avant de passer à l'étape suivante.
+Met le workflow en pause pendant une durée définie (jours, heures, minutes) avant de passer à l'étape suivante.
+
+<img src="/images/bloc-attente.png" alt="Bloc d'attente avec sa durée configurable" width="420" />
 
 ## <Icon icon="search" /> Bloc de recherche
 
-Recherche des profils, pour le sourcing ou la prospection.
+Recherche pour le sourcing ou la prospection. Vous pouvez rechercher des **candidats**, des **contacts** ou des **entreprises**.
 
-## <Icon icon="globe" /> Bloc de recherche internet
+<img src="/images/bloc-recherche-candidats.png" alt="Bloc de recherche : rechercher des candidats" width="420" />
 
-Recherche n'importe quelle information utile sur internet, exploitable dans la suite du workflow.
+<img src="/images/bloc-recherche-contacts.png" alt="Bloc de recherche : rechercher des contacts" width="420" />
 
-Par exemple : trouver des offres d'emploi similaires au profil d'un candidat que vous souhaitez faire démarrer, identifier les auteurs de ces offres, les retrouver sur LinkedIn et les remonter comme **prospects** potentiellement intéressés de rencontrer ce candidat.
-
-## <Icon icon="pencil" /> Bloc de modification
-
-Modifie n'importe quel champ d'un enregistrement : candidat, client, besoin, entreprise, etc.
+<img src="/images/bloc-recherche-entreprises.png" alt="Bloc de recherche : rechercher des entreprises" width="420" />
 
 ## <Icon icon="send" /> Bloc de communication
 
@@ -55,10 +46,40 @@ Envoie un message via le canal de votre choix :
 - Envoyer un message WhatsApp
 - …
 
-## <Icon icon="list-todo" /> Bloc d'action manuelle
+<img src="/images/bloc-comm-email.png" alt="Bloc de communication : envoyer un e-mail" width="420" />
 
-Crée une tâche manuelle pour un utilisateur — par exemple, appeler quelqu'un.
+<img src="/images/bloc-comm-linkedin-connexion.png" alt="Bloc de communication : envoyer une demande de connexion LinkedIn" width="420" />
+
+<img src="/images/bloc-comm-linkedin-message.png" alt="Bloc de communication : envoyer un message LinkedIn" width="420" />
+
+## <Icon icon="git-fork" /> Bloc de condition
+
+Crée un branchement basé sur une action du lead : le workflow suit la branche **Oui** ou **Non** selon que la condition est remplie.
+
+<img src="/images/bloc-condition.png" alt="Bloc de condition avec branches Oui et Non" width="420" />
 
 ## <Icon icon="workflow" /> Bloc d'appel d'un workflow
 
 Appelle un autre workflow depuis le workflow courant.
+
+<img src="/images/bloc-appel-workflow.png" alt="Bloc d'appel d'un autre workflow" width="420" />
+
+## Blocs à venir
+
+Ces blocs ne sont **pas encore disponibles** :
+
+### <Icon icon="globe" /> Bloc de recherche internet
+
+Recherche n'importe quelle information utile sur internet, exploitable dans la suite du workflow.
+
+### <Icon icon="pencil" /> Bloc de modification
+
+Modifie n'importe quel champ d'un enregistrement : candidat, client, besoin, entreprise, etc.
+
+### <Icon icon="calendar" /> Bloc de meeting
+
+Planifie une réunion avec le lead dans le déroulé du workflow.
+
+### <Icon icon="list-todo" /> Bloc d'action manuelle
+
+Crée une tâche manuelle pour un utilisateur — par exemple, appeler quelqu'un.

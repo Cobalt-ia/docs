@@ -1,19 +1,20 @@
 ---
-title: "Managing the pipeline & tasks"
+title: "Tasks"
 icon: "list-checks"
 sidebarTitle: "Overview"
-description: "Track candidate progress through a visual pipeline per assignment, manage your work from a kanban board, and share a real-time shortlist with your clients."
+description: "Manual or automatic tasks, kanban board, filters and reminders — a clear view of all your actions."
 ---
 
-Cobalt turns every call and meeting into a clear set of next steps — automatically. As soon as a meeting ends, Cobalt analyses the transcript, extracts action items, and creates tasks with full context, a suggested assignee, a priority level, and a deadline. Alongside task management, every recruitment assignment has its own visual pipeline so you can track candidate progress from first contact to placement and share real-time shortlists with clients.
-
-<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID_A_REMPLACER" title="Pipeline and tasks in Cobalt" frameBorder="0" allowFullScreen></iframe>
-
----
+Cobalt turns every call and meeting into a clear set of action items — automatically. As soon as a meeting ends, Cobalt analyses the transcript, extracts action items, and creates tasks with full context, a suggested assignee, a priority level, and a deadline. You manage everything from a kanban board, with filters and reminders.
 
 ## Task management
 
-### Auto-task creation from transcripts
+### Automatic tasks
+
+**Automatic tasks** are created by Cobalt on your behalf, from two sources:
+
+- a **workflow** — a manual-action block automatically creates the task;
+- the **transcription** of a meeting or phone call.
 
 After a call or meeting ends, Cobalt processes the transcript in the background. It identifies commitments, follow-ups, and action items, then creates individual tasks — each one pre-filled with:
 
@@ -41,9 +42,13 @@ Your tasks appear on a kanban board with four columns:
 
 Drag tasks between columns to update their status instantly. Every task is linked to the relevant **candidate**, **client**, or **project**, so you always have the full context one click away.
 
-### Manual task creation
+### Manual tasks
 
-To create a task manually, click **New Task** from the task board or from inside any candidate, client, or project record. Fill in the title, description, assignee, priority, and deadline.
+**Manual tasks** are actions you create yourself, like a to-do list (call a candidate, follow up with a client, prepare an interview…). Click **New Task** from the task board or from inside any candidate, client, or project record, then fill in the title, description, assignee, priority, and deadline.
+
+You can also **add a reference** (a client or a candidate) to give the task context — for example "call this client in 3 weeks" linked to the client's name. The reference acts as a tag that tells you who the task is about.
+
+<img src="/images/tache-manuelle.png" alt="Manual task creation dialog" width="560" />
 
 ### Filters and notifications
 
@@ -55,53 +60,3 @@ Use the filter bar to narrow your task board by:
 - **Source** — filter by tasks created from meetings vs. calls vs. manually
 
 Cobalt notifies the assigned team member when a task is created or reassigned, and sends a reminder when a deadline is approaching.
-
----
-
-## Recruitment pipeline
-
-### Visual pipeline per assignment
-
-Every recruitment assignment (project) in Cobalt has its own dedicated pipeline. You see every candidate's position in the hiring process at a glance and move them forward by dragging their card between stages.
-
-**Default pipeline stages:**
-
-```text
-Qualified → Client Interview → Positioned → Placed
-```
-
-All stages are fully customisable — add, rename, remove, or reorder stages to match your team's process.
-
-### Real-time KPIs
-
-Each project pipeline displays live metrics so you can spot bottlenecks and coach your team:
-
-- **Conversion rate per stage** — what percentage of candidates advance from one stage to the next
-- **Average time in stage** — how long candidates spend at each step before moving forward or dropping out
-
-### Client portal
-
-Share a shortlist directly with your client using a secure link — they do not need a Cobalt account. The client portal lets them:
-
-- View candidate cards and profiles
-- Leave feedback and ratings in real time
-- Indicate preferences directly on the shortlist
-
-You see client feedback appear in Cobalt the moment they submit it, so you can react quickly without chasing emails.
-
----
-
-## BoondManager sync
-
-<Note>
-  If your agency uses BoondManager, tasks, projects, and placements sync bidirectionally between Cobalt and BoondManager. Changes made in either platform are reflected in both. See the [BoondManager integration guide](/en/integrations/boondmanager) for setup instructions.
-</Note>
-
-## Plan availability
-
-| Plan | Pipeline & tasks |
-|---|---|
-| Free | 3 active projects |
-| Core | Unlimited projects |
-| Copilot | Unlimited projects |
-| Enterprise | Unlimited projects |

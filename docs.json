@@ -119,8 +119,7 @@
                 "group": "Tâches",
                 "pages": [
                   "fr/fonctionnalites/pipeline-taches",
-                  "fr/fonctionnalites/taches/manuelle",
-                  "fr/fonctionnalites/taches/automatique"
+                  "fr/fonctionnalites/taches/parametres"
                 ]
               },
               {
@@ -154,12 +153,28 @@
             "tab": "Cas d'usage",
             "groups": [
               {
-                "group": "Cas d'usage",
+                "group": "Exécutifs & managers",
                 "pages": [
-                  "fr/cas-usage/staffing-esn",
-                  "fr/cas-usage/intercontrat",
+                  "fr/cas-usage/persona-direction",
+                  "fr/cas-usage/pilotage-activite",
+                  "fr/cas-usage/intercontrat"
+                ]
+              },
+              {
+                "group": "Business managers",
+                "pages": [
+                  "fr/cas-usage/persona-business-manager",
                   "fr/cas-usage/comptes-clients",
+                  "fr/cas-usage/cartographie-upsell",
                   "fr/cas-usage/agence-recrutement"
+                ]
+              },
+              {
+                "group": "Chargés de recrutement",
+                "pages": [
+                  "fr/cas-usage/persona-charge-recrutement",
+                  "fr/cas-usage/sourcer-sur-besoin",
+                  "fr/cas-usage/sourcer-sur-profil"
                 ]
               }
             ]
@@ -271,8 +286,7 @@
                 "group": "Tasks",
                 "pages": [
                   "en/fonctionnalites/pipeline-taches",
-                  "en/fonctionnalites/taches/manuelle",
-                  "en/fonctionnalites/taches/automatique"
+                  "en/fonctionnalites/taches/parametres"
                 ]
               },
               {
@@ -306,12 +320,28 @@
             "tab": "Use cases",
             "groups": [
               {
-                "group": "Use cases",
+                "group": "Executives & managers",
                 "pages": [
-                  "en/cas-usage/staffing-esn",
-                  "en/cas-usage/intercontrat",
+                  "en/cas-usage/persona-direction",
+                  "en/cas-usage/pilotage-activite",
+                  "en/cas-usage/intercontrat"
+                ]
+              },
+              {
+                "group": "Business managers",
+                "pages": [
+                  "en/cas-usage/persona-business-manager",
                   "en/cas-usage/comptes-clients",
+                  "en/cas-usage/cartographie-upsell",
                   "en/cas-usage/agence-recrutement"
+                ]
+              },
+              {
+                "group": "Recruiters",
+                "pages": [
+                  "en/cas-usage/persona-charge-recrutement",
+                  "en/cas-usage/sourcer-sur-besoin",
+                  "en/cas-usage/sourcer-sur-profil"
                 ]
               }
             ]
