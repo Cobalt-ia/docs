@@ -1,10 +1,39 @@
 ---
-title: "Paramètres"
+title: "Paramètres de transcription"
 sidebarTitle: "Paramètres"
 icon: "settings"
-description: "À compléter."
+description: "Activez la transcription des réunions et appels, gérez la présence du bot meeting par meeting, et configurez l'enrichissement et sa validation."
 ---
 
-<Note>
-  Contenu à rédiger.
-</Note>
+Cette page explique comment activer la transcription et régler son comportement.
+
+## Pré-requis : connecter Google ou Microsoft
+
+Avant tout, connectez votre compte **Google** ou **Microsoft** dans **Paramètres → Comptes email**. Cette connexion permet à Cobalt de **synchroniser votre calendrier** et d'**envoyer des emails** depuis Cobalt — c'est le pré-requis indispensable à la transcription.
+
+## Activer ou désactiver la transcription
+
+Chaque utilisateur peut **activer ou désactiver complètement le bot** dans ses réunions via l'option **Enregistrer les meetings**. Lorsqu'elle est désactivée, aucune transcription n'a lieu. Par défaut, elle est **toujours activée**.
+
+<img src="/images/transcription-enregistrer-meetings.png" alt="Option Enregistrer les meetings dans les comptes email" />
+
+## Gérer le bot meeting par meeting
+
+Vous pouvez aussi décider, réunion par réunion, si le bot doit venir. Chaque meeting affiche un statut :
+
+- **Planifiée** — le bot va rejoindre la réunion et la transcrire.
+- **Non planifié** — le bot ne viendra pas. Une réunion sans lien de visio est automatiquement **non planifiée**.
+
+<img src="/images/transcription-tags-meetings.png" alt="Statuts des meetings : Planifiée ou Non planifié" width="320" />
+
+Pour **déplanifier** un meeting (retirer le bot), ouvrez le menu **...** du meeting puis cliquez sur **Retirer le bot**.
+
+<img src="/images/transcription-retirer-bot.png" alt="Menu d'actions d'un meeting avec l'option Retirer le bot" width="300" />
+
+## Enrichissement et validation de la transcription
+
+L'enrichissement de la transcription (mise à jour des fiches à partir des informations détectées) peut être appliqué **automatiquement** ou laissé en **validation manuelle**, selon le **niveau de confiance** de l'IA et le **type d'entité**.
+
+Rendez-vous dans les **paramètres de l'organisation**, section **Enrichissement des réunions**, et sélectionnez les réglages qui vous conviennent. Trois niveaux de confiance sont disponibles — **élevée**, **moyenne**, **faible** — et pour chacun vous activez l'application automatique par type d'entité (Contacts, Entreprises, Opportunités, Positionnements, Candidats, Tâches). Le reste est conservé dans l'onglet **Propositions** de la réunion pour une revue manuelle.
+
+<img src="/images/transcription-enrichissement.png" alt="Paramètres d'enrichissement des réunions par niveau de confiance" />

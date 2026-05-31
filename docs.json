@@ -61,7 +61,6 @@
               {
                 "group": "Référence",
                 "pages": [
-                  "fr/reference/faq",
                   "fr/reference/tutoriels-video"
                 ]
               }
@@ -73,18 +72,9 @@
               {
                 "group": "People Search Engine",
                 "pages": [
+                  "fr/fonctionnalites/people-search",
                   "fr/fonctionnalites/recherche-semantique",
                   "fr/fonctionnalites/prospection"
-                ]
-              },
-              {
-                "group": "Projets",
-                "pages": [
-                  "fr/fonctionnalites/projets/besoin",
-                  "fr/fonctionnalites/projets/intercontrat",
-                  "fr/fonctionnalites/projets/candidat",
-                  "fr/fonctionnalites/projets/prospection",
-                  "fr/fonctionnalites/projets/entreprise"
                 ]
               },
               {
@@ -102,6 +92,18 @@
                   "fr/fonctionnalites/dossier/versionning",
                   "fr/fonctionnalites/dossier/export",
                   "fr/fonctionnalites/dossier/parametres"
+                ]
+              },
+              {
+                "group": "Projets",
+                "pages": [
+                  "fr/fonctionnalites/projets/overview",
+                  "fr/fonctionnalites/projets/besoin",
+                  "fr/fonctionnalites/projets/intercontrat",
+                  "fr/fonctionnalites/projets/candidat",
+                  "fr/fonctionnalites/projets/prospection",
+                  "fr/fonctionnalites/projets/entreprise",
+                  "fr/fonctionnalites/projets/parametres"
                 ]
               },
               {
@@ -136,6 +138,14 @@
                   "fr/fonctionnalites/liste-blocs",
                   "fr/fonctionnalites/sequences",
                   "fr/fonctionnalites/process"
+                ]
+              },
+              {
+                "group": "Templates",
+                "pages": [
+                  "fr/fonctionnalites/templates/documents",
+                  "fr/fonctionnalites/templates/messages",
+                  "fr/fonctionnalites/templates/interactions"
                 ]
               }
             ]
@@ -203,7 +213,6 @@
               {
                 "group": "Reference",
                 "pages": [
-                  "en/reference/faq",
                   "en/reference/tutoriels-video"
                 ]
               }
@@ -215,18 +224,9 @@
               {
                 "group": "People Search Engine",
                 "pages": [
+                  "en/fonctionnalites/people-search",
                   "en/fonctionnalites/recherche-semantique",
                   "en/fonctionnalites/prospection"
-                ]
-              },
-              {
-                "group": "Projects",
-                "pages": [
-                  "en/fonctionnalites/projets/besoin",
-                  "en/fonctionnalites/projets/intercontrat",
-                  "en/fonctionnalites/projets/candidat",
-                  "en/fonctionnalites/projets/prospection",
-                  "en/fonctionnalites/projets/entreprise"
                 ]
               },
               {
@@ -244,6 +244,18 @@
                   "en/fonctionnalites/dossier/versionning",
                   "en/fonctionnalites/dossier/export",
                   "en/fonctionnalites/dossier/parametres"
+                ]
+              },
+              {
+                "group": "Projects",
+                "pages": [
+                  "en/fonctionnalites/projets/overview",
+                  "en/fonctionnalites/projets/besoin",
+                  "en/fonctionnalites/projets/intercontrat",
+                  "en/fonctionnalites/projets/candidat",
+                  "en/fonctionnalites/projets/prospection",
+                  "en/fonctionnalites/projets/entreprise",
+                  "en/fonctionnalites/projets/parametres"
                 ]
               },
               {
@@ -278,6 +290,14 @@
                   "en/fonctionnalites/liste-blocs",
                   "en/fonctionnalites/sequences",
                   "en/fonctionnalites/process"
+                ]
+              },
+              {
+                "group": "Templates",
+                "pages": [
+                  "en/fonctionnalites/templates/documents",
+                  "en/fonctionnalites/templates/messages",
+                  "en/fonctionnalites/templates/interactions"
                 ]
               }
             ]

@@ -201,3 +201,8 @@ a:has(img.nav-logo) {
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
+
+/* Coins droits (pas d'arrondis) sur les encadrés Info / Tip / Note / Warning */
+.callout {
+  border-radius: 0 !important;
+}
