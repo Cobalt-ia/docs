@@ -1,0 +1,92 @@
+---
+title: "Recherche sémantique de candidats"
+icon: "search"
+sidebarTitle: "Sourcing"
+description: "Trouvez les bons candidats en décrivant le poste naturellement — Cobalt comprend les synonymes et les équivalences de titres sans requête booléenne."
+---
+
+La recherche sémantique de Cobalt vous permet de retrouver les candidats pertinents en décrivant simplement le poste, sans maîtriser la syntaxe booléenne. Elle s'adresse aux recruteurs et consultants ESN qui veulent aller vite tout en couvrant l'ensemble des variantes d'un titre ou d'une compétence.
+
+<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID_A_REMPLACER" title="Recherche sémantique de candidats dans Cobalt" frameBorder="0" allowFullScreen></iframe>
+
+## Comment lancer une recherche sémantique
+
+<Steps>
+  <Step title="Ouvrez la barre de recherche">
+    Depuis n'importe quelle page, cliquez sur la barre de recherche principale ou appuyez sur le raccourci clavier dédié.
+  </Step>
+  <Step title="Décrivez le profil recherché en langage naturel">
+    Tapez votre besoin comme vous le formuleriez à un collègue : *« développeur backend senior, fintech, disponible sur Paris »*. Pas d'opérateurs, pas de guillemets obligatoires.
+  </Step>
+  <Step title="Consultez les résultats classés par pertinence">
+    Cobalt retourne une liste de candidats ordonnée par score de pertinence. Chaque profil indique les critères qui ont contribué au classement.
+  </Step>
+  <Step title="Affinez avec les filtres complémentaires">
+    Utilisez les filtres (localisation, disponibilité, niveau de séniorité, type de contrat) pour restreindre la liste sans réécrire votre requête.
+  </Step>
+</Steps>
+
+<Tip>
+  Décrivez le rôle tel que vous l'expliqueriez lors d'un brief interne : *« senior backend developer, 5+ ans, expérience fintech, disponible à Paris »*. Cobalt gère les synonymes et le classement — vous n'avez qu'à parcourir la sélection.
+</Tip>
+
+## Fonctionnement du moteur sémantique
+
+Le moteur de recherche de Cobalt repose sur un modèle vectoriel entraîné sur les titres de postes et les taxonomies de compétences propres au marché IT et ESN. Lorsque vous saisissez un terme, le modèle le projette dans un espace sémantique qui capture les concepts voisins, les titres équivalents et les synonymes contextuels.
+
+**Exemples de mappings en pratique :**
+
+- *« Chef de projet digital »* → correspond aussi à *« Digital PM »*, *« Head of Digital »*, *« Responsable transformation numérique »*
+- *« DevOps »* → correspond aussi à *« SRE »*, *« Platform Engineer »*, *« Infrastructure Engineer »*
+- *« Senior cloud engineer »* → correspond aussi à *« Lead Engineer AWS/GCP »*, *« Cloud Architect »*, *« Solutions Engineer »*
+
+Cette approche couvre automatiquement les équivalences français/anglais très fréquentes dans les ESN françaises, sans que vous ayez à lister chaque variante.
+
+## Score de pertinence
+
+Chaque candidat retourné reçoit un score construit à partir de plusieurs critères. Les compétences et savoir-faire constituent le critère principal, suivis de la disponibilité, de la localisation et du niveau de séniorité.
+
+<Note>
+  Les pondérations par défaut sont calibrées pour le recrutement IT et conseil. Contactez le support si vous souhaitez les ajuster à votre activité ou à votre modèle métier.
+</Note>
+
+## Recherche sémantique vs. recherche booléenne
+
+| | Recherche booléenne | Recherche sémantique Cobalt |
+|---|---|---|
+| **Logique de correspondance** | Mot-clé exact | Comprend le sens et le contexte |
+| **Gestion des synonymes** | Manuelle — vous listez chaque variante | Automatique — couverte par le modèle IA |
+| **Complexité de la requête** | Élevée — opérateurs, guillemets, wildcards | Nulle — écrivez naturellement |
+| **Qualité des résultats** | Uniquement ce que vous avez écrit | Classé par pertinence sur les concepts associés |
+| **Candidats manqués** | Risque élevé si synonymes omis | Risque faible — titres équivalents remontés automatiquement |
+
+## Rôle de l'agent Balt dans la recherche
+
+L'agent IA **Balt** enrichit la recherche sémantique en interrogeant simultanément votre base interne et des sources publiques. Il produit une liste courte de candidats classés, chacun accompagné d'un résumé IA expliquant pourquoi le profil correspond à votre besoin — compétences, disponibilité, localisation, séniorité. Vous décrivez le poste en langage naturel ; Balt gère l'exploration et le classement.
+
+<Info>
+  Balt est disponible à partir du plan Core. La recherche sémantique dans la base interne est accessible à tous les plans, avec un quota mensuel sur le plan Free.
+</Info>
+
+## Disponibilité par plan
+
+| Plan | Recherche sémantique |
+|---|---|
+| Free | Quota mensuel limité |
+| Core | Illimitée |
+| Copilot | Illimitée |
+| Enterprise | Illimitée |
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Dois-je apprendre une syntaxe particulière ?">
+    Non. La recherche sémantique de Cobalt comprend les requêtes en langage naturel, en français comme en anglais. Vous n'avez pas besoin d'opérateurs booléens, de guillemets ou de wildcards.
+  </Accordion>
+  <Accordion title="La recherche couvre-t-elle les profils en anglais et en français ?">
+    Oui. Le modèle est entraîné sur les deux langues et gère les équivalences bilingues courantes dans le marché ESN français — par exemple, « Développeur » et « Software Engineer » sont traités comme équivalents.
+  </Accordion>
+  <Accordion title="Puis-je combiner la recherche sémantique avec des filtres ?">
+    Oui. Après avoir saisi votre requête, vous pouvez affiner les résultats avec les filtres de localisation, disponibilité, séniorité ou type de contrat sans relancer une nouvelle recherche.
+  </Accordion>
+</AccordionGroup>

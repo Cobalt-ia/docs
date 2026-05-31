@@ -1,0 +1,92 @@
+---
+title: "Semantic candidate search"
+icon: "search"
+sidebarTitle: "Sourcing"
+description: "Find the right candidates by describing the role naturally — Cobalt understands synonyms and job title equivalences without any boolean query."
+---
+
+Cobalt's semantic search lets you find relevant candidates by simply describing the role, without mastering boolean syntax. It is designed for recruiters and ESN consultants who want to move fast while covering all variants of a title or competency.
+
+<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID_A_REMPLACER" title="Semantic candidate search in Cobalt" frameBorder="0" allowFullScreen></iframe>
+
+## How to run a semantic search
+
+<Steps>
+  <Step title="Open the search bar">
+    From any page, click the main search bar or press the dedicated keyboard shortcut.
+  </Step>
+  <Step title="Describe the profile you are looking for in plain language">
+    Type your need the way you would describe it to a colleague: *"senior backend developer, fintech, available in Paris"*. No operators, no mandatory quotes.
+  </Step>
+  <Step title="Review results ranked by relevance">
+    Cobalt returns a list of candidates ordered by relevance score. Each profile indicates the criteria that contributed to its ranking.
+  </Step>
+  <Step title="Refine with additional filters">
+    Use filters (location, availability, seniority level, contract type) to narrow the list without rewriting your query.
+  </Step>
+</Steps>
+
+<Tip>
+  Describe the role the way you would in an internal brief: *"senior backend developer, 5+ years, fintech experience, available in Paris"*. Cobalt handles synonym mapping and ranking — you just review the shortlist.
+</Tip>
+
+## How the semantic engine works
+
+Cobalt's search layer uses a vectorised AI model trained on job titles and competency taxonomies specific to the IT and ESN market. When you enter a search term, the model maps it to a semantic space that captures related concepts, equivalent titles, and contextual synonyms.
+
+**Example mappings in practice:**
+
+- *"Chef de projet digital"* → also matches *"Digital PM"*, *"Head of Digital"*, *"Responsable transformation numérique"*
+- *"DevOps"* → also matches *"SRE"*, *"Platform Engineer"*, *"Infrastructure Engineer"*
+- *"Senior cloud engineer"* → also matches *"Lead Engineer AWS/GCP"*, *"Cloud Architect"*, *"Solutions Engineer"*
+
+This approach automatically covers French/English equivalences that are very common in French ESN firms, without you having to list every variant.
+
+## Relevance score
+
+Every candidate returned receives a score built from multiple criteria. Skills and competencies are the primary criterion, followed by availability, location, and seniority level.
+
+<Note>
+  Default weightings are calibrated for IT and consulting recruitment. Contact support if you want them adjusted to your practice area or business model.
+</Note>
+
+## Semantic search vs. boolean search
+
+| | Boolean search | Cobalt semantic search |
+|---|---|---|
+| **Matching logic** | Exact keyword | Understands meaning and context |
+| **Synonym handling** | Manual — you list every variant | Automatic — covered by the AI model |
+| **Query complexity** | High — operators, quotes, wildcards | None — write naturally |
+| **Result quality** | Only what you typed | Ranked by relevance across related concepts |
+| **Missed candidates** | High risk if synonyms omitted | Low risk — equivalent titles surfaced automatically |
+
+## Balt's role in search
+
+The AI agent **Balt** extends semantic search by querying your internal database and public sources simultaneously. It produces a ranked shortlist, each candidate accompanied by an AI summary explaining why the profile matches your need — skills, availability, location, seniority. You describe the role in plain language; Balt handles exploration and ranking.
+
+<Info>
+  Balt is available from the Core plan onwards. Semantic search within the internal database is available on all plans, with a monthly quota on the Free plan.
+</Info>
+
+## Plan availability
+
+| Plan | Semantic search |
+|---|---|
+| Free | Limited monthly quota |
+| Core | Unlimited |
+| Copilot | Unlimited |
+| Enterprise | Unlimited |
+
+## Frequently asked questions
+
+<AccordionGroup>
+  <Accordion title="Do I need to learn a specific syntax?">
+    No. Cobalt's semantic search understands plain-language queries in both French and English. No boolean operators, quotes, or wildcards are required.
+  </Accordion>
+  <Accordion title="Does the search cover both French and English profiles?">
+    Yes. The model is trained on both languages and handles the common bilingual equivalences in the French ESN market — for example, "Développeur" and "Software Engineer" are treated as equivalent.
+  </Accordion>
+  <Accordion title="Can I combine semantic search with filters?">
+    Yes. After entering your query, you can refine results with location, availability, seniority, or contract type filters without running a new search.
+  </Accordion>
+</AccordionGroup>

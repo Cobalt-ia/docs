@@ -1,0 +1,113 @@
+---
+title: "Sécurité & RGPD"
+icon: "shield-check"
+sidebarTitle: "Sécurité & RGPD"
+description: "Infrastructure hébergée en France, chiffrement AES-256/TLS 1.3, MFA, conformité RGPD native et DPA inclus avec tous les plans."
+---
+
+Cobalt est conçu pour le marché européen. Vos données sont hébergées exclusivement en France, chiffrées de bout en bout et protégées par des contrôles RGPD intégrés à chaque flux de travail. Vous êtes propriétaire à 100 % de vos données, en permanence.
+
+## Infrastructure & hébergement
+
+**Localisation**
+
+Cobalt s'exécute sur **AWS Paris (eu-west-3)** et **Scaleway** (France). Les deux fournisseurs sont intégralement basés dans l'UE. Aucune donnée n'est transférée ni traitée en dehors de l'Union européenne.
+
+**Chiffrement**
+
+- Données au repos : chiffrement **AES-256**
+- Données en transit : **TLS 1.3**
+
+Le chiffrement est toujours actif ; il n'existe aucun chemin non chiffré, et aucune option ne permet de le désactiver.
+
+**Disponibilité**
+
+Cobalt repose sur une architecture haute disponibilité avec basculement automatique entre zones de disponibilité. L'infrastructure est surveillée en continu.
+
+## Authentification & contrôle d'accès
+
+- **MFA obligatoire** pour tous les comptes administrateurs — cette option ne peut pas être désactivée.
+- **Authentification à deux facteurs (2FA)** disponible pour tous les utilisateurs (fortement recommandée).
+- **SSO / SAML** disponible sur le plan Enterprise.
+- **Permissions granulaires basées sur les rôles** — contrôlez précisément ce que chaque utilisateur peut voir et faire, au niveau de chaque module et type d'enregistrement.
+
+## Conformité RGPD
+
+Cobalt est conforme au RGPD par conception, pas par configuration. Les contrôles dont vous avez besoin sont intégrés à chaque flux de travail.
+
+### Gestion du consentement
+
+Les candidats doivent donner leur consentement explicite avant que vous puissiez les contacter. Cobalt suit le statut de consentement par candidat et par canal, et affiche des alertes si vous tentez de contacter un profil non consenti.
+
+### Droit à l'effacement
+
+Supprimez n'importe quel profil candidat en un clic. Cobalt retire l'enregistrement de tous les systèmes — y compris les données d'enrichissement, les enregistrements d'appels et les résumés générés par l'IA.
+
+### Portabilité des données
+
+Exportez n'importe quel profil individuel ou l'intégralité de votre base de données à tout moment aux formats **JSON ou CSV**, directement depuis les paramètres de votre compte. Aucune demande d'assistance n'est nécessaire.
+
+### Notification de violation
+
+Cobalt maintient des processus de réponse aux incidents conformes à l'**article 33 du RGPD**. En cas de violation affectant vos données, vous êtes notifié dans un délai de 72 heures.
+
+### Accord de traitement des données (DPA)
+
+Un DPA est inclus avec tous les plans — y compris le plan gratuit. Les clients Enterprise peuvent négocier un **DPA personnalisé** adapté aux exigences spécifiques de leur groupe. Pour accéder au DPA standard ou en demander une version personnalisée, contactez l'équipe via le chat intégré ou par e-mail à [team@cobalt-ia.com](mailto:team@cobalt-ia.com).
+
+## Usage des données & IA
+
+<Note>
+  Vos données ne sont **jamais utilisées pour entraîner des modèles d'IA**. Il s'agit d'un engagement contractuel inscrit dans le DPA, pas d'une simple déclaration de politique.
+</Note>
+
+Cobalt fait appel à des **modèles d'IA tiers** pour la génération de documents, la rédaction d'e-mails, la synthèse et le raisonnement complexe. Les fournisseurs exacts sont soumis aux mêmes contraintes contractuelles que Cobalt en matière d'utilisation des données.
+
+**L'humain reste dans la boucle**
+
+Cobalt propose — vous décidez. Aucune action autonome ne s'exécute sans votre validation explicite. Les scores, correspondances et suggestions de séquences de l'IA sont toujours présentés comme des recommandations, jamais comme des instructions.
+
+## Audit & transparence
+
+**Journaux d'audit**
+
+Chaque action effectuée dans Cobalt — par un utilisateur ou par un agent IA — est enregistrée dans un **journal d'audit immuable**. Les journaux sont :
+
+- **Interrogeables** : filtrez par plage de dates, utilisateur, type d'action ou enregistrement.
+- **Exportables** : téléchargez en CSV pour les rapports de conformité ou les examens juridiques.
+- **Immuables** : aucun utilisateur, y compris les administrateurs, ne peut modifier ou supprimer les entrées du journal.
+
+Les journaux d'audit sont accessibles à tous les administrateurs sur l'ensemble des plans.
+
+**Scoring IA explicable**
+
+Lorsque Cobalt évalue un candidat par rapport à un poste, vous pouvez voir précisément quelles compétences, signaux d'expérience et critères ont conduit au score. Il n'y a aucun classement opaque.
+
+**Mesures anti-biais**
+
+Cobalt applique plusieurs mesures pour réduire les biais algorithmiques dans le recrutement :
+
+1. Audits algorithmiques réguliers [À CONFIRMER : fréquence et prestataire tiers]
+2. Scoring transparent — chaque score affiche son raisonnement
+3. Options d'anonymisation — masquez le nom, la photo et d'autres identifiants lors de la phase de scoring
+4. Contrôle humain final — un humain prend toujours la décision finale
+
+## Propriété des données
+
+Vous êtes propriétaire à 100 % de vos données. Cobalt ne revendique aucun droit sur vos enregistrements de candidats, vos données entreprises ou vos informations propriétaires.
+
+- **Export en un clic** aux formats JSON ou CSV à tout moment, depuis les paramètres de votre compte.
+- **30 jours pour exporter** après la résiliation de votre compte — vos données restent accessibles et téléchargeables.
+- Aucun verrouillage fournisseur : les fichiers exportés sont structurés et portables vers toute autre plateforme.
+
+## Certifications & tests de sécurité
+
+| Initiative | Statut |
+|---|---|
+| ISO 27001 | Objectif visé — non obtenue à ce jour (démarche en cours, obtention visée en 2026) |
+| Tests d'intrusion | [À CONFIRMER] |
+| Programme bug bounty | [À CONFIRMER] |
+
+<Warning>
+  ISO 27001 est un objectif que Cobalt vise activement. La certification n'a pas encore été obtenue. Cette page sera mise à jour dès qu'elle le sera.
+</Warning>
