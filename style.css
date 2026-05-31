@@ -144,6 +144,60 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
 }
 
 img.nav-logo {
-  max-width: 220px;
-  height: auto;
+  height: 2rem !important;
+  width: auto !important;
+  max-width: 320px;
+}
+
+/* Agrandir la barre du haut pour accompagner un grand logo (évite le rognage) */
+#navbar,
+#header,
+header#header,
+nav#navbar {
+  height: auto !important;
+  min-height: 4.5rem !important;
+  overflow: visible !important;
+}
+
+#navbar a:has(img.nav-logo),
+a:has(img.nav-logo) {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Masquer le sélecteur de langue dans la barre de navigation */
+#navbar div:has(> #localization-select-trigger) {
+  display: none !important;
+}
+
+/* Bouton Dashboard en noir charbon (#1C1917) */
+#navbar a[href="https://app.cobalt-ia.com/"] span.bg-primary-dark {
+  background-color: #1C1917 !important;
+}
+
+/* Eyebrow (fil d'Ariane au-dessus du titre) en bleu (couleur du thème) et en gras */
+#content-area .breadcrumb-item,
+#content-area .breadcrumb-item a {
+  color: rgb(var(--primary)) !important;
+  font-weight: 700 !important;
+}
+
+.dark #content-area .breadcrumb-item,
+.dark #content-area .breadcrumb-item a {
+  color: rgb(var(--primary-light)) !important;
+}
+
+/* Image hero de la page d'accueil : pleine largeur + marge verticale réduite */
+[data-current-path$='/introduction'] #content > span[data-rmiz],
+[data-current-path$='/introduction'] #content span[data-rmiz] > span[data-rmiz-content] {
+  display: block !important;
+  width: 100% !important;
+}
+
+[data-current-path$='/introduction'] #content img[src*='cobalt-hero'] {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
 }

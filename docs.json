@@ -1,17 +1,17 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "Cobalt",
   "description": "CRM & ATS augmenté par l'IA pour ESN et cabinets de recrutement.",
   "colors": {
-    "primary": "#8c8c84",
-    "light": "#1d1d15",
-    "dark": "#f0f0ef"
+    "primary": "#0040c1",
+    "light": "#5b8def",
+    "dark": "#0033a0"
   },
   "favicon": "https://media.brand.dev/7226e886-426b-4a53-88bf-5f53eb18afd1.svg",
   "logo": {
-    "light": "https://media.brand.dev/38c760e7-696f-4360-8527-f220478229b7.png",
-    "dark": "https://media.brand.dev/38c760e7-696f-4360-8527-f220478229b7.png"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "icons": {
     "library": "lucide"
@@ -33,66 +33,109 @@
             "groups": [
               {
                 "group": "Démarrer",
-                "icon": "rocket",
                 "expanded": true,
                 "pages": [
                   "fr/introduction",
                   "fr/quickstart",
-                  "fr/demarrer/configurer-espace",
                   "fr/demarrer/inviter-equipe",
-                  "fr/demarrer/connecter-outils"
+                  "fr/demarrer/configurer-espace"
+                ]
+              },
+              {
+                "group": "Intégrations",
+                "pages": [
+                  "fr/integrations/boondmanager",
+                  "fr/integrations/microsoft-365",
+                  "fr/integrations/google-workspace",
+                  "fr/integrations/linkedin",
+                  "fr/integrations/whatsapp",
+                  "fr/integrations/extension-chrome"
                 ]
               },
               {
                 "group": "Sécurité & conformité",
-                "icon": "shield",
                 "pages": [
                   "fr/securite/securite-rgpd"
                 ]
               },
               {
                 "group": "Référence",
-                "icon": "book-open",
                 "pages": [
                   "fr/reference/faq",
-                  "fr/reference/tutoriels-video",
-                  "fr/reference/support"
+                  "fr/reference/tutoriels-video"
                 ]
               }
             ]
           },
           {
             "tab": "Fonctionnalités",
-            "groups": [
+            "pages": [
               {
-                "group": "Sourcing & recherche",
-                "icon": "search",
+                "group": "People Search Engine",
                 "pages": [
                   "fr/fonctionnalites/recherche-semantique",
-                  "fr/fonctionnalites/enrichissement"
+                  "fr/fonctionnalites/prospection"
                 ]
               },
               {
-                "group": "Présentation candidat",
-                "icon": "file-text",
+                "group": "Projets",
                 "pages": [
-                  "fr/fonctionnalites/dossier-competences"
+                  "fr/fonctionnalites/projets/besoin",
+                  "fr/fonctionnalites/projets/intercontrat",
+                  "fr/fonctionnalites/projets/candidat",
+                  "fr/fonctionnalites/projets/prospection",
+                  "fr/fonctionnalites/projets/entreprise"
                 ]
               },
               {
-                "group": "Communication",
-                "icon": "send",
+                "group": "Enrichissement",
                 "pages": [
-                  "fr/fonctionnalites/sequences",
+                  "fr/fonctionnalites/enrichissement",
+                  "fr/fonctionnalites/enrichissement/reenrichissement"
+                ]
+              },
+              {
+                "group": "Dossier de compétence",
+                "pages": [
+                  "fr/fonctionnalites/dossier-competences",
+                  "fr/fonctionnalites/dossier/partager-candidat",
+                  "fr/fonctionnalites/dossier/versionning",
+                  "fr/fonctionnalites/dossier/export",
+                  "fr/fonctionnalites/dossier/parametres"
+                ]
+              },
+              {
+                "group": "Conversations",
+                "pages": [
+                  "fr/fonctionnalites/conversations/interaction",
+                  "fr/fonctionnalites/conversations/email",
+                  "fr/fonctionnalites/conversations/linkedin",
+                  "fr/fonctionnalites/conversations/whatsapp"
+                ]
+              },
+              {
+                "group": "Tâches",
+                "pages": [
+                  "fr/fonctionnalites/pipeline-taches",
+                  "fr/fonctionnalites/taches/manuelle",
+                  "fr/fonctionnalites/taches/automatique"
+                ]
+              },
+              {
+                "group": "Transcription",
+                "pages": [
+                  "fr/fonctionnalites/transcription",
                   "fr/fonctionnalites/telephonie-voip",
-                  "fr/fonctionnalites/transcription"
+                  "fr/fonctionnalites/transcription-parametres"
                 ]
               },
               {
-                "group": "CRM & pipeline",
-                "icon": "kanban",
+                "group": "Workflow",
                 "pages": [
-                  "fr/fonctionnalites/pipeline-taches"
+                  "fr/fonctionnalites/creer-premier-workflow",
+                  "fr/fonctionnalites/liste-blocs",
+                  "fr/fonctionnalites/sequences",
+                  "fr/fonctionnalites/process"
                 ]
               }
             ]
@@ -102,7 +145,6 @@
             "groups": [
               {
                 "group": "Cas d'usage",
-                "icon": "briefcase",
                 "pages": [
                   "fr/cas-usage/staffing-esn",
                   "fr/cas-usage/intercontrat",
@@ -113,40 +155,10 @@
             ]
           },
           {
-            "tab": "Intégrations",
-            "groups": [
-              {
-                "group": "ERP",
-                "icon": "database",
-                "pages": [
-                  "fr/integrations/boondmanager"
-                ]
-              },
-              {
-                "group": "Email & agenda",
-                "icon": "mail",
-                "pages": [
-                  "fr/integrations/google-workspace",
-                  "fr/integrations/microsoft-365"
-                ]
-              },
-              {
-                "group": "Messagerie & sourcing",
-                "icon": "messages-square",
-                "pages": [
-                  "fr/integrations/linkedin",
-                  "fr/integrations/whatsapp",
-                  "fr/integrations/extension-chrome"
-                ]
-              }
-            ]
-          },
-          {
             "tab": "Changelog",
             "groups": [
               {
                 "group": "Changelog",
-                "icon": "list",
                 "pages": [
                   "fr/changelog"
                 ]
@@ -163,66 +175,109 @@
             "groups": [
               {
                 "group": "Get started",
-                "icon": "rocket",
                 "expanded": true,
                 "pages": [
                   "en/introduction",
                   "en/quickstart",
-                  "en/demarrer/configurer-espace",
                   "en/demarrer/inviter-equipe",
-                  "en/demarrer/connecter-outils"
+                  "en/demarrer/configurer-espace"
+                ]
+              },
+              {
+                "group": "Integrations",
+                "pages": [
+                  "en/integrations/boondmanager",
+                  "en/integrations/microsoft-365",
+                  "en/integrations/google-workspace",
+                  "en/integrations/linkedin",
+                  "en/integrations/whatsapp",
+                  "en/integrations/extension-chrome"
                 ]
               },
               {
                 "group": "Security & compliance",
-                "icon": "shield",
                 "pages": [
                   "en/securite/securite-rgpd"
                 ]
               },
               {
                 "group": "Reference",
-                "icon": "book-open",
                 "pages": [
                   "en/reference/faq",
-                  "en/reference/tutoriels-video",
-                  "en/reference/support"
+                  "en/reference/tutoriels-video"
                 ]
               }
             ]
           },
           {
             "tab": "Features",
-            "groups": [
+            "pages": [
               {
-                "group": "Sourcing & search",
-                "icon": "search",
+                "group": "People Search Engine",
                 "pages": [
                   "en/fonctionnalites/recherche-semantique",
-                  "en/fonctionnalites/enrichissement"
+                  "en/fonctionnalites/prospection"
                 ]
               },
               {
-                "group": "Candidate presentation",
-                "icon": "file-text",
+                "group": "Projects",
                 "pages": [
-                  "en/fonctionnalites/dossier-competences"
+                  "en/fonctionnalites/projets/besoin",
+                  "en/fonctionnalites/projets/intercontrat",
+                  "en/fonctionnalites/projets/candidat",
+                  "en/fonctionnalites/projets/prospection",
+                  "en/fonctionnalites/projets/entreprise"
                 ]
               },
               {
-                "group": "Communication",
-                "icon": "send",
+                "group": "Enrichment",
                 "pages": [
-                  "en/fonctionnalites/sequences",
+                  "en/fonctionnalites/enrichissement",
+                  "en/fonctionnalites/enrichissement/reenrichissement"
+                ]
+              },
+              {
+                "group": "Skills document",
+                "pages": [
+                  "en/fonctionnalites/dossier-competences",
+                  "en/fonctionnalites/dossier/partager-candidat",
+                  "en/fonctionnalites/dossier/versionning",
+                  "en/fonctionnalites/dossier/export",
+                  "en/fonctionnalites/dossier/parametres"
+                ]
+              },
+              {
+                "group": "Conversations",
+                "pages": [
+                  "en/fonctionnalites/conversations/interaction",
+                  "en/fonctionnalites/conversations/email",
+                  "en/fonctionnalites/conversations/linkedin",
+                  "en/fonctionnalites/conversations/whatsapp"
+                ]
+              },
+              {
+                "group": "Tasks",
+                "pages": [
+                  "en/fonctionnalites/pipeline-taches",
+                  "en/fonctionnalites/taches/manuelle",
+                  "en/fonctionnalites/taches/automatique"
+                ]
+              },
+              {
+                "group": "Transcription",
+                "pages": [
+                  "en/fonctionnalites/transcription",
                   "en/fonctionnalites/telephonie-voip",
-                  "en/fonctionnalites/transcription"
+                  "en/fonctionnalites/transcription-parametres"
                 ]
               },
               {
-                "group": "CRM & pipeline",
-                "icon": "kanban",
+                "group": "Workflow",
                 "pages": [
-                  "en/fonctionnalites/pipeline-taches"
+                  "en/fonctionnalites/creer-premier-workflow",
+                  "en/fonctionnalites/liste-blocs",
+                  "en/fonctionnalites/sequences",
+                  "en/fonctionnalites/process"
                 ]
               }
             ]
@@ -232,7 +287,6 @@
             "groups": [
               {
                 "group": "Use cases",
-                "icon": "briefcase",
                 "pages": [
                   "en/cas-usage/staffing-esn",
                   "en/cas-usage/intercontrat",
@@ -243,40 +297,10 @@
             ]
           },
           {
-            "tab": "Integrations",
-            "groups": [
-              {
-                "group": "ERP",
-                "icon": "database",
-                "pages": [
-                  "en/integrations/boondmanager"
-                ]
-              },
-              {
-                "group": "Email & calendar",
-                "icon": "mail",
-                "pages": [
-                  "en/integrations/google-workspace",
-                  "en/integrations/microsoft-365"
-                ]
-              },
-              {
-                "group": "Messaging & sourcing",
-                "icon": "messages-square",
-                "pages": [
-                  "en/integrations/linkedin",
-                  "en/integrations/whatsapp",
-                  "en/integrations/extension-chrome"
-                ]
-              }
-            ]
-          },
-          {
             "tab": "Changelog",
             "groups": [
               {
                 "group": "Changelog",
-                "icon": "list",
                 "pages": [
                   "en/changelog"
                 ]
@@ -290,18 +314,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Tarifs",
-        "href": "https://www.cobalt-ia.com/fr/pricing"
-      },
-      {
         "label": "Support",
         "href": "mailto:team@cobalt-ia.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Demander une démo",
-      "href": "https://cal.com/gregory-hissiger-2k73tl/cobalt-demo"
+      "label": "Dashboard",
+      "href": "https://app.cobalt-ia.com/"
     }
   },
   "redirects": [
