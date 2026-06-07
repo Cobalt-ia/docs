@@ -2,32 +2,62 @@
 title: "Projects"
 sidebarTitle: "Overview"
 icon: "layout-grid"
-description: "What projects are in Cobalt: available views, attachments (needs, candidates, workflows), and permissions."
+description: "What projects are in Cobalt: creation by use case, available views, attachments, and permissions."
 ---
 
 **Projects** structure your work in Cobalt. Each project groups the records and actions tied to a specific goal — a need to fill, a consultant to reposition, an account to grow, and so on.
 
+## Create a project
+
+You can create a project in two ways:
+
+- From the **Projects page**, using the **New project** button.
+- From the **People Search Engine**, when you want to **save people** you've sourced or prospected into a project.
+
+When creating it, enter a **name** and a **use case**:
+
+<img src="/images/projet-creation-modal.png" alt="New project modal: project name and use case" width="560" />
+
+Depending on the **use case** you pick, Cobalt will ask for **different information** and adapt the project's default view:
+
+<img src="/images/projet-cas-usage.png" alt="Use case picker: Source, Present a profile, Prospect, Custom" width="480" />
+
 ## By use case
 
-Pick the project type that fits your goal:
+**Source**
 
 <CardGroup cols={2}>
   <Card title="Source for a need" icon="clipboard-list" href="/en/fonctionnalites/projets/besoin">
     Source candidates to fill a client need.
   </Card>
-  <Card title="Start a bench placement" icon="calendar-clock" href="/en/fonctionnalites/projets/intercontrat">
-    Reposition a consultant who is between assignments.
-  </Card>
-  <Card title="Push a top profile" icon="user" href="/en/fonctionnalites/projets/candidat">
-    Proactively push a profile to your clients.
-  </Card>
-  <Card title="Identify the right decision-makers" icon="target" href="/en/fonctionnalites/projets/prospection">
-    Find the right people to contact (expanding contacts, new decision-makers).
-  </Card>
-  <Card title="Discover new clients" icon="building-2" href="/en/fonctionnalites/projets/entreprise">
-    Identify new companies to approach.
+  <Card title="Source for a profile" icon="user-search" href="/en/fonctionnalites/projets/profil">
+    Source continuously for a profile or sector, without a specific need.
   </Card>
 </CardGroup>
+
+**Present a profile**
+
+<CardGroup cols={2}>
+  <Card title="Present a candidate" icon="user" href="/en/fonctionnalites/projets/candidat">
+    Proactively push a profile to your clients.
+  </Card>
+  <Card title="Present a bench consultant" icon="calendar-clock" href="/en/fonctionnalites/projets/intercontrat">
+    Reposition a consultant who is between assignments. *(coming soon)*
+  </Card>
+</CardGroup>
+
+**Prospect**
+
+<CardGroup cols={2}>
+  <Card title="Prospect for contacts" icon="target" href="/en/fonctionnalites/projets/prospection">
+    Identify the right decision-makers to contact.
+  </Card>
+  <Card title="Prospect for companies" icon="building-2" href="/en/fonctionnalites/projets/entreprise">
+    Discover new companies to approach.
+  </Card>
+</CardGroup>
+
+A **custom** use case will also be available soon.
 
 ## Views
 
@@ -45,11 +75,20 @@ Each project has an **Active** or **Archived** status. Active projects are the o
 
 You can **filter projects by type and by member**. Handy, for example, in a weekly meeting: filter by member to review everyone's business actions for the past week.
 
+## Send a message
+
+From a project's **list of people**, you can **send a message**:
+
+- **Manually**, straight from the project.
+- **Automatically** via [workflows](/en/fonctionnalites/creer-premier-workflow) *(coming soon)*.
+
+For now, sending is **email only** — multichannel sending is not available yet.
+
 ## Attachments
 
 Depending on the project type, you can **attach needs or candidates**.
 
-You can also **attach workflows** to partially or fully automate certain project tasks. See [Create your first workflow](/en/fonctionnalites/creer-premier-workflow) to learn more.
+You can also **attach workflows** to partially or fully automate certain project tasks. See [Workflows overview](/en/fonctionnalites/creer-premier-workflow) to learn more.
 
 ## Permissions
 

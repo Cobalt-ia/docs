@@ -99,8 +99,9 @@
                 "pages": [
                   "fr/fonctionnalites/projets/overview",
                   "fr/fonctionnalites/projets/besoin",
-                  "fr/fonctionnalites/projets/intercontrat",
+                  "fr/fonctionnalites/projets/profil",
                   "fr/fonctionnalites/projets/candidat",
+                  "fr/fonctionnalites/projets/intercontrat",
                   "fr/fonctionnalites/projets/prospection",
                   "fr/fonctionnalites/projets/entreprise",
                   "fr/fonctionnalites/projets/parametres"
@@ -266,8 +267,9 @@
                 "pages": [
                   "en/fonctionnalites/projets/overview",
                   "en/fonctionnalites/projets/besoin",
-                  "en/fonctionnalites/projets/intercontrat",
+                  "en/fonctionnalites/projets/profil",
                   "en/fonctionnalites/projets/candidat",
+                  "en/fonctionnalites/projets/intercontrat",
                   "en/fonctionnalites/projets/prospection",
                   "en/fonctionnalites/projets/entreprise",
                   "en/fonctionnalites/projets/parametres"

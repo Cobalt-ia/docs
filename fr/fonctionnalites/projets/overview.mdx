@@ -2,32 +2,62 @@
 title: "Projets"
 sidebarTitle: "Vue d'ensemble"
 icon: "layout-grid"
-description: "Ce que sont les projets dans Cobalt : vues disponibles, rattachements (besoins, candidats, workflows) et permissions."
+description: "Ce que sont les projets dans Cobalt : création par cas d'usage, vues disponibles, rattachements et permissions."
 ---
 
 Les **projets** structurent votre travail dans Cobalt. Chaque projet regroupe les enregistrements et les actions liés à un objectif précis — un besoin à pourvoir, un consultant à replacer, un compte à développer, etc.
 
+## Créer un projet
+
+Vous pouvez créer un projet de deux manières :
+
+- Depuis la **page Projets**, avec le bouton **Nouveau projet**.
+- Depuis le **People Search Engine**, lorsque vous souhaitez **sauvegarder des personnes** sourcées ou prospectées dans un projet.
+
+À la création, renseignez un **nom** et un **cas d'usage** :
+
+<img src="/images/projet-creation-modal.png" alt="Modale Nouveau projet : nom du projet et cas d'usage" width="560" />
+
+En fonction du **cas d'usage** choisi, Cobalt ne vous demandera **pas les mêmes informations** et adaptera la vue par défaut du projet :
+
+<img src="/images/projet-cas-usage.png" alt="Choix du cas d'usage : Sourcer, Présenter un profil, Prospecter, Personnalisé" width="480" />
+
 ## Selon votre cas d'usage
 
-Choisissez le type de projet adapté à votre objectif :
+**Sourcer**
 
 <CardGroup cols={2}>
   <Card title="Sourcer sur besoin" icon="clipboard-list" href="/fr/fonctionnalites/projets/besoin">
     Sourcer des candidats pour répondre à un besoin client.
   </Card>
-  <Card title="Démarrer un intercontrat" icon="calendar-clock" href="/fr/fonctionnalites/projets/intercontrat">
-    Repositionner un consultant en intercontrat.
-  </Card>
-  <Card title="Push un top profil" icon="user" href="/fr/fonctionnalites/projets/candidat">
-    Pousser proactivement un profil auprès de vos clients.
-  </Card>
-  <Card title="Identifier les bons décisionnaires" icon="target" href="/fr/fonctionnalites/projets/prospection">
-    Trouver les bons interlocuteurs à contacter (grenouillage, nouveaux décisionnaires).
-  </Card>
-  <Card title="Découvrir de nouveaux clients" icon="building-2" href="/fr/fonctionnalites/projets/entreprise">
-    Identifier de nouvelles entreprises à démarcher.
+  <Card title="Sourcer sur profil" icon="user-search" href="/fr/fonctionnalites/projets/profil">
+    Sourcer en continu sur un profil ou un secteur, sans besoin précis.
   </Card>
 </CardGroup>
+
+**Présenter un profil**
+
+<CardGroup cols={2}>
+  <Card title="Présenter un candidat" icon="user" href="/fr/fonctionnalites/projets/candidat">
+    Pousser proactivement un profil auprès de vos clients.
+  </Card>
+  <Card title="Présenter un intercontrat" icon="calendar-clock" href="/fr/fonctionnalites/projets/intercontrat">
+    Repositionner un consultant en intercontrat. *(bientôt disponible)*
+  </Card>
+</CardGroup>
+
+**Prospecter**
+
+<CardGroup cols={2}>
+  <Card title="Prospecter des contacts" icon="target" href="/fr/fonctionnalites/projets/prospection">
+    Identifier les bons décisionnaires à contacter.
+  </Card>
+  <Card title="Prospecter des entreprises" icon="building-2" href="/fr/fonctionnalites/projets/entreprise">
+    Découvrir de nouvelles entreprises à démarcher.
+  </Card>
+</CardGroup>
+
+Un cas d'usage **personnalisé** sera également disponible prochainement.
 
 ## Vues
 
@@ -45,11 +75,20 @@ Chaque projet a un statut **Actif** ou **Archivé**. Les projets actifs sont ceu
 
 Vous pouvez **filtrer les projets par type et par membre**. Pratique, par exemple, en réunion hebdomadaire : filtrez par membre pour passer en revue les actions business de chacun sur la semaine écoulée.
 
+## Envoyer un message
+
+Depuis la **liste de personnes** d'un projet, vous pouvez **envoyer un message** :
+
+- **Manuellement**, directement depuis le projet.
+- **Automatiquement** via les [workflows](/fr/fonctionnalites/creer-premier-workflow) *(bientôt disponible)*.
+
+Pour l'instant, l'envoi se fait **uniquement par email** — l'envoi multicanal n'est pas encore disponible.
+
 ## Rattachements
 
 Selon le type de projet, vous pouvez **attacher des besoins ou des candidats**.
 
-Vous pouvez aussi **attacher des workflows** pour automatiser partiellement ou totalement certaines tâches du projet. Voir [Créer son premier workflow](/fr/fonctionnalites/creer-premier-workflow) pour en savoir plus.
+Vous pouvez aussi **attacher des workflows** pour automatiser partiellement ou totalement certaines tâches du projet. Voir [Vue d'ensemble des workflows](/fr/fonctionnalites/creer-premier-workflow) pour en savoir plus.
 
 ## Permissions
 
