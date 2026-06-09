@@ -42,3 +42,119 @@ Pour en savoir plus sur la transcription, consultez [Transcription de réunions]
 
 - Chaque membre de l'équipe doit connecter son propre compte individuellement. Les emails partent de l'adresse personnelle de chaque utilisateur via Microsoft 365.
 - La transcription des réunions nécessite que la synchronisation du calendrier soit active : sans elle, Balt ne peut pas rejoindre les réunions Teams automatiquement.
+
+## Problèmes de connexion et de synchronisation (Microsoft Entra)
+
+Lors de la première connexion d'un compte Microsoft 365 à Cobalt, certains utilisateurs voient un message leur demandant de contacter leur administrateur. Cette section explique pourquoi, et donne la marche à suivre selon que vous êtes utilisateur ou administrateur informatique.
+
+### Pourquoi ce message apparaît
+
+Cobalt accède à la messagerie et à l'agenda via Microsoft Graph. Dans beaucoup d'organisations, ce type d'accès doit être validé une fois par un administrateur avant que les utilisateurs puissent connecter leur compte. Tant que cette validation n'a pas eu lieu, chaque utilisateur reste bloqué sur ce message.
+
+<Note>
+  La validation se fait une seule fois, par un administrateur de l'organisation. Elle prend quelques minutes. Ensuite, chaque collaborateur connecte son propre compte sans blocage.
+</Note>
+
+### Vous êtes utilisateur de Cobalt
+
+Ce blocage ne se règle pas depuis votre compte. Il doit être levé par un administrateur Microsoft 365 de votre organisation (votre service informatique).
+
+Transmettez-lui le message suivant :
+
+```
+Bonjour,
+
+J'utilise Cobalt et je dois connecter ma messagerie et mon agenda Microsoft 365.
+Un message me demande l'autorisation d'un administrateur.
+
+Pourrais-tu autoriser l'application Cobalt pour notre organisation ?
+La marche à suivre est décrite ici : https://cobalt-ia.com/docs/connexion-microsoft-365
+
+Merci !
+```
+
+Une fois l'autorisation accordée par votre administrateur, revenez dans Cobalt et reconnectez votre compte Microsoft. Le message aura disparu.
+
+### Vous êtes administrateur informatique
+
+#### Prérequis : votre rôle
+
+Pour autoriser l'application, vous devez disposer de l'un de ces rôles dans Microsoft Entra :
+
+- Administrateur général (Global Administrator)
+- Administrateur de rôle privilégié (Privileged Role Administrator)
+- Administrateur d'application cloud (Cloud Application Administrator)
+
+<Warning>
+  Être « administrateur » au sens métier ne suffit pas. Sans l'un de ces rôles Entra, la validation ne sera pas réellement enregistrée et vos utilisateurs resteront bloqués.
+</Warning>
+
+#### Méthode recommandée : autoriser Cobalt pour l'organisation
+
+C'est la méthode la plus simple et la plus ciblée. Elle autorise uniquement Cobalt, pour tous vos utilisateurs.
+
+<Steps>
+  <Step title="Se connecter à Cobalt en premier">
+    Connectez votre propre compte Microsoft dans Cobalt. Sur l'écran de consentement Microsoft, cochez la case « Consentir au nom de votre organisation », puis validez.
+  </Step>
+  <Step title="Si la case n'apparaît pas, utiliser le lien direct">
+    Ouvrez ce lien dans un navigateur où vous êtes connecté avec votre compte administrateur :
+
+    ```
+    https://login.microsoftonline.com/common/adminconsent?client_id=e7399ffc-a133-4d62-a200-98c6ebae38f5
+    ```
+
+    Microsoft affiche la liste des autorisations demandées par Cobalt (messagerie, agenda). Cliquez sur « Accepter ».
+  </Step>
+  <Step title="Prévenir les utilisateurs">
+    L'autorisation vaut pour toute l'organisation. Chaque collaborateur peut maintenant connecter son propre compte Microsoft dans Cobalt, sans blocage.
+  </Step>
+</Steps>
+
+<Note>
+  Le lien existe aussi en version ciblée sur un tenant précis, utile si vous avez plusieurs comptes : remplacez `common` par votre identifiant de tenant. Vous le trouvez dans Entra, page Vue d'ensemble, champ « ID de locataire ».
+
+  ```
+  https://login.microsoftonline.com/{tenant_id}/adminconsent?client_id=e7399ffc-a133-4d62-a200-98c6ebae38f5
+  ```
+</Note>
+
+#### Autre option : ouvrir le consentement aux éditeurs vérifiés
+
+Plutôt que d'autoriser Cobalt spécifiquement, vous pouvez assouplir un réglage global. Cobalt étant un éditeur vérifié par Microsoft, cela laisse les utilisateurs consentir eux-mêmes.
+
+Dans le centre d'administration Entra (entra.microsoft.com) : **Identité → Applications → Applications d'entreprise → Consentement et autorisations → Paramètres de consentement de l'utilisateur**. Autorisez les utilisateurs à consentir, de préférence avec l'option réservée aux éditeurs vérifiés.
+
+<Warning>
+  Ce réglage s'applique à toutes les applications, pas seulement à Cobalt. Si vous préférez rester ciblé, gardez la méthode recommandée ci-dessus.
+</Warning>
+
+#### Si ça ne fonctionne pas
+
+À vérifier dans l'ordre :
+
+<AccordionGroup>
+  <Accordion title="1. Réessayer en navigation privée">
+    Si la page reste bloquée sur « Redirecting... », rouvrez le lien de consentement dans une fenêtre de navigation privée et autorisez les fenêtres pop-up pour login.microsoftonline.com. C'est souvent un simple problème de cache ou de cookies.
+  </Accordion>
+  <Accordion title="2. Vérifier votre rôle">
+    Confirmez que vous disposez bien de l'un des trois rôles listés dans les prérequis. Si ce n'est pas le cas, demandez à un administrateur général de réaliser l'opération, ou de vous attribuer temporairement le rôle Administrateur d'application cloud.
+  </Accordion>
+  <Accordion title="3. Vérifier les politiques d'accès conditionnel">
+    Des politiques de sécurité (authentification multifacteur, restrictions d'appareil ou géographiques) peuvent bloquer silencieusement le consentement. Vérifiez dans Entra, section **Sécurité → Accès conditionnel**, et réalisez l'opération depuis un appareil ou un réseau conforme.
+  </Accordion>
+  <Accordion title="4. En dernier recours : PowerShell">
+    Si l'interface web ne répond toujours pas, créez l'accès en ligne de commande :
+
+    ```powershell
+    Connect-MgGraph -TenantId "{tenant_id}" -Scopes "Application.ReadWrite.All"
+    New-MgServicePrincipal -AppId "e7399ffc-a133-4d62-a200-98c6ebae38f5"
+    ```
+  </Accordion>
+</AccordionGroup>
+
+### Une fois débloqué
+
+L'autorisation administrateur lève le blocage, mais ne connecte pas automatiquement les boîtes de tout le monde. La synchronisation se faisant par utilisateur, chaque collaborateur connecte ensuite son propre compte Microsoft dans Cobalt pour synchroniser sa messagerie et son agenda.
+
+Besoin d'aide ? Écrivez-nous à support@cobalt-ia.com.
