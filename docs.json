@@ -45,6 +45,7 @@
                 "group": "Intégrations",
                 "pages": [
                   "fr/integrations/boondmanager",
+                  "fr/integrations/salesforce",
                   "fr/integrations/microsoft-365",
                   "fr/integrations/google-workspace",
                   "fr/integrations/linkedin",
@@ -213,6 +214,7 @@
                 "group": "Integrations",
                 "pages": [
                   "en/integrations/boondmanager",
+                  "en/integrations/salesforce",
                   "en/integrations/microsoft-365",
                   "en/integrations/google-workspace",
                   "en/integrations/linkedin",
