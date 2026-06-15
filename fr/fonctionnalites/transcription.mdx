@@ -33,9 +33,15 @@ Chaque entretien contient des informations dont votre CRM a besoin — compéten
 
 ## Cas d'usage par type de meeting
 
-À la **création d'un meeting**, choisissez un **type de cas d'usage**. Chaque type de réunion dispose de **statuts dédiés** — par exemple, pour un candidat : **E1**, **E2**, **prépa-qualif**… — ce qui permet de créer des **workflows basés sur les cas d'usage** (voir [Vue d'ensemble des workflows](/fr/fonctionnalites/creer-premier-workflow)).
+À la **création d'un meeting**, choisissez un **cas d'usage** : **candidat**, **client**, **qualification** ou **interne**. Chaque cas d'usage dispose de **sous-cas d'usage** (statuts dédiés) — par exemple pour un candidat : **E1**, **E2**, **prépa-qualif**…
+
+Ce cas d'usage permet à Cobalt d'**aiguiller automatiquement** le workflow déclenché par la transcription vers la bonne suite — voir [Templates de workflow par cas d'usage de meeting](/fr/fonctionnalites/creer-premier-workflow#templates-de-workflow-par-cas-d-usage-de-meeting).
 
 <img src="/images/changelog-meeting-cas-usage.png" alt="Sélection d'un cas d'usage à la création d'un meeting" width="420" />
+
+<Warning>
+  Si un meeting est créé depuis **Outlook**, le cas d'usage n'est pas renseigné automatiquement : un **avertissement** s'affiche sur le meeting dans le calendrier. Renseignez-le manuellement, sinon le workflow ne pourra pas router correctement vers la bonne suite.
+</Warning>
 
 ## Ce que Cobalt extrait de chaque réunion
 

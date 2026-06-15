@@ -33,9 +33,15 @@ Every interview contains information your CRM needs — skills, availability, sa
 
 ## Use case per meeting type
 
-When **creating a meeting**, choose a **use-case type**. Each meeting type has **dedicated statuses** — for example, for a candidate: **E1**, **E2**, **qualification prep**… — which lets you build **use-case-based workflows** (see [Workflows overview](/en/fonctionnalites/creer-premier-workflow)).
+When **creating a meeting**, choose a **use case**: **candidate**, **client**, **qualification**, or **internal**. Each use case has **sub-use cases** (dedicated statuses) — for example, for a candidate: **E1**, **E2**, **qualification prep**…
+
+This use case lets Cobalt **automatically route** the workflow triggered by the transcription to the right continuation — see [Workflow templates by meeting use case](/en/fonctionnalites/creer-premier-workflow#workflow-templates-by-meeting-use-case).
 
 <img src="/images/changelog-meeting-cas-usage.png" alt="Selecting a use case when creating a meeting" width="420" />
+
+<Warning>
+  If a meeting is created from **Outlook**, the use case is not filled in automatically: a **warning** is shown on the meeting in the calendar. Fill it in manually, otherwise the workflow won't be able to route correctly to the right continuation.
+</Warning>
 
 ## What Cobalt extracts from every meeting
 
