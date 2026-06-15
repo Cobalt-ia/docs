@@ -34,3 +34,25 @@ You can run everything fully automatically if you want, or — recommended — r
 
 <img src="/images/workflow-validation.png" alt="A running workflow with a step awaiting approval: review the email, then validate and move to the next step" />
 
+## Workflow templates by meeting use case
+
+When creating a meeting, you choose a **meeting use case**: **candidate**, **client**, **qualification**, or **internal** (see [Transcription](/en/fonctionnalites/transcription#use-case-per-meeting-type)). Cobalt provides **4 default workflow templates**, one for each of these use cases — designed for typical staffing agency (ESN) processes.
+
+Each template starts with a **creation trigger** (fires when a new transcription is created), followed by an **enrichment** step for the profile, then a **Condition** block that **routes by use case**: depending on the meeting's sub-use case — for a candidate: E1, E2, qualification prep…; for a client: prospecting…; internally: weekly… — the workflow continues down a different branch.
+
+<img src="/images/changelog-workflow-meeting-templates.png" alt="Workflow triggered when a transcription is created, with enrichment then routing by use case" width="620" />
+
+A few examples of possible continuations depending on the sub-use case:
+
+- **After a first candidate interview (E1)** — send the candidate an email asking for a competitor's skills document.
+- **After a qualification prep** — send the candidate a recap of the key points to remember ahead of the qualification meeting with the client.
+- **After an interview** — automatically generate a new version of the skills document from the profile enriched by the transcription.
+
+See also [Interaction templates](/en/fonctionnalites/templates/interactions) for automatic meeting summaries.
+
+## Execution tracking
+
+The dashboard's **Workflow** sidebar shows the real-time execution of your workflows. Steps requiring **human validation** — such as enrichment, task creation, or reviewing an email before it's sent — appear there as **to process**: validate them to move the workflow to its next step.
+
+**Filters** let you find executions by status: **In progress**, **To validate**, **Succeeded**, **Failed**, **Cancelled**, **Recipient replied**.
+
