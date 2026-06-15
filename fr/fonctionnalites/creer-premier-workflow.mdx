@@ -34,9 +34,25 @@ Vous pouvez ainsi tout exécuter en automatique si vous le souhaitez, ou — c'e
 
 <img src="/images/workflow-validation.png" alt="Workflow en cours avec étape en attente d'approbation : relire l'email puis valider et passer à l'étape suivante" />
 
-## Templates de workflow post-meeting
+## Templates de workflow par cas d'usage de meeting
 
-Des **templates de workflow post-meeting** automatisent les actions à mener à la suite d'une réunion — par exemple mettre à jour la fiche du candidat, générer un compte-rendu ou planifier une relance. Voir aussi [Templates d'interaction](/fr/fonctionnalites/templates/interactions) pour la génération automatique de comptes-rendus de réunion.
+À la création d'une réunion, vous choisissez un **cas d'usage de meeting** : **candidat**, **client**, **qualification** ou **interne** (voir [Transcription](/fr/fonctionnalites/transcription#cas-d-usage-par-type-de-meeting)). Cobalt propose **4 templates de workflow par défaut**, un pour chacun de ces cas d'usage — pensés pour les processus types d'une ESN.
 
-<img src="/images/changelog-workflow-meeting-templates.png" alt="Templates de workflow post-meeting" width="620" />
+Chaque template démarre par un **Déclencheur de création** (se déclenche lorsqu'une nouvelle transcription est créée), suivi d'une étape d'**enrichissement** du profil, puis d'un bloc **Condition** qui **aiguille par cas d'usage** : selon le sous-cas d'usage de la réunion — pour un candidat : E1, E2, prépa-qualif… ; pour un client : prospection… ; en interne : weekly… — le workflow se poursuit sur une branche différente.
+
+<img src="/images/changelog-workflow-meeting-templates.png" alt="Workflow déclenché à la création d'une transcription, avec enrichissement puis aiguillage par cas d'usage" width="620" />
+
+Quelques exemples de continuités possibles selon le sous-cas d'usage :
+
+- **Après un premier entretien candidat (E1)** — envoyer un email au candidat pour lui demander le dossier de compétences d'un concurrent.
+- **Après une prépa-qualif** — envoyer au candidat un récapitulatif des points clés à retenir avant le rendez-vous de qualification avec le client.
+- **Après un entretien** — générer automatiquement une nouvelle version du dossier de compétences à partir du profil enrichi par la transcription.
+
+Voir aussi [Templates d'interaction](/fr/fonctionnalites/templates/interactions) pour la génération automatique de comptes-rendus de réunion.
+
+## Suivi de l'exécution
+
+La sidebar **Workflow** du tableau de bord affiche en temps réel les workflows en cours d'exécution. Les étapes nécessitant une **validation humaine** — par exemple l'enrichissement, la création de tâches, ou la vérification d'un email avant envoi — y apparaissent **à traiter** : validez-les pour faire passer le workflow à l'étape suivante.
+
+Des **filtres** permettent de retrouver les exécutions selon leur statut : **En cours**, **À valider**, **Réussie**, **Échouée**, **Annulée**, **Le destinataire a répondu**.
 
